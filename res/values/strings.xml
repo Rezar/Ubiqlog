@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">UbiqLog</string>
+	<string name="alert_dialog_set">Set</string>
+	<string name="empty_string"></string>
+	<string name="sensor_info">Sensors:</string>
+	<string name="sensors_button">Change the sensors</string>
+	<string name="error_word">ERROR</string>
+	<string name="note_word">NOTE</string>
+	<string name="exclamation_mark">:</string>
+	<string name="colon">:</string>
+	<string name="point">.</string>
+	<string name="error_edit_message">You can not edit an error message.</string>
+	<string name="back_message">Click the back button and try again.</string>
+	<string name="delete_message">Your selected record will be DELETED.</string>
+	<string name="empty_message">The entered text is empty.</string>
+	<string name="edit_message">Edit/Delete the record</string>
+	<string name="Vis_Ok">OK</string>
+	<string name="Vis_Cancel">CANCEL</string>
+	<string name="Vis_DateTimePickerTitle">Select Date and Time</string>
+	<string name="Vis_StartDateTime">From</string>
+	<string name="Vis_EndDateTime">To</string>
+	
+    <string name="Vis_app_name">Visualization</string>	
+	<string name="Vis_call_app_name">Call Log</string>
+	<string name="Vis_location_app_name">Location Log</string>
+	<string name="Vis_application_app_name">Application Log</string>
+	<string name="Vis_location_ic_dialog_ok">OK</string>
+	<string name="Vis_location_ic_dialog_message">No internet connection detected!\nIn order to use
+		this application you need an active internet connection!</string>
+	<string name="Vis_Searcher_start_date_end_date_exception">The to date is before the from date! Please
+		modify the data and try again.</string>
+	<string name="Vis_sms_app_name">SMS Log</string>
+	<string name="Vis_settings_app_name">Settings</string>
+	<string name="Vis_settings_location_timeframe">Location time frame (ms):</string>
+	<string name="Vis_settings_application_timeframe">Application time frame (ms):</string>
+	<string name="Vis_settings_call_timeframe">Call time frame (ms):</string>
+	<string name="Vis_settings_sms_timeframe">Sms time frame (ms):</string>
+	<string name="Vis_settings_save">Save</string>
+	<string name="Vis_settings_cancel">Cancel</string>
+	<string-array name="Vis_Applications">
+		<item>Application</item><item>Call</item><item>Sms</item><item>Bluetooth</item>
+		
+		<item>Location</item>
+		
+		<item>Accelerometer</item><item>Settings</item>
+		
+		
+	</string-array>
+	<string name="Vis_loading">Loading data</string>
+	<string name="Vis_Searching">Searching...</string>
+	<string name="Vis_noData">No data found for selected interval!</string>
+	<string name="Vis_Application_Choose">Please choose the desired time interval.
+		After you choose the \&quot;to\&quot; date and click on \&quot;OK\&quot; the data will be automatically loaded.</string>
+<string name="Vis_ApplicationUse">Application use</string>
+<string name="Vis_Application_TimesAccessed">Times accessed</string>
+<string name="Vis_Application_LongestTime">Longest time</string>
+<string name="Vis_Application_ShortestTime">Shortest time</string>
+<string name="Vis_Application_DayNight">day/night percentage</string>
+<string name="Vis_Call_Unknown">Unknown</string>
+<string name="Vis_Call_ContactDetails">CONTACT DETAILS</string>
+<string name="Vis_Call_ContactName">NAME</string>
+<string name="Vis_Call_ContactPhone">PHONE NUMBER</string>
+<string name="Vis_Call_ContactCallDuration">CALL DURATION</string>
+<string name="Vis_Call_ContactCallType">CALL TYPE</string>
+<string name="Vis_Call_ContactStatistic">CALL STATISTICS</string>
+<string name="Vis_Call_ShortestCall">Shortest call</string>
+<string name="Vis_Call_LongestCall">Longest call</string>
+<string name="Vis_Call_TotalTime">Total time</string>
+<string name="Vis_Call_Protocol">CONTACT CALL PROTOCOL</string>
+<string name="Vis_Call_DateTime">DATETIME</string>
+<string name="Vis_Call_Duration">DURATION</string>
+<string name="Vis_Call_Type">TYPE</string>
+<string name="Vis_Sms_Type">SMS TYPE</string>
+<string name="Vis_Sms_Total">TOTAL SMS</string>
+<string name="Vis_Sms_Protocol">SMS PROTOCOL</string>
+<string name="Vis_bluetooth_app_name">Bluetooth Log</string>
+<string name="Vis_accelerometer_app_name">Movement</string>
+	
+	
+</resources>
