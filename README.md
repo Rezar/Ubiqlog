@@ -7,5 +7,5 @@ UbiqLog is a energy-efficient open source tool for "life logging", based on Andr
 
 Special thanks to Martin Tomitsch, Victor Andrei Gugonatu and www.aiqo.org for their design or development support. 
 
-References:
-Rawassizadeh, Reza, et al. "UbiqLog: a Generic Mobile Phone-based Life-Log Framework." Personal and Ubiquitous Computing 17.4 (2013): 621-637.
+####References:
+- Rawassizadeh, Reza, et al. "UbiqLog: a Generic Mobile Phone-based Life-Log Framework." Personal and Ubiquitous Computing 17.4 (2013): 621-637.
