@@ -28,7 +28,7 @@ public final class Setting {
 	public static final String ARCH_FILE = "ArchiveAble.txt";
 	public static final String[] PRESERVABLE = { "tiff", "tif", "ogg", "mp4","m2s", "m2v", "wav", "aiff" };
 	
-	// Added by Dorin
+	// ------------DEPRECATED---------------------
 	public static final String EXCLUDED_APPS_SHARED_PREF_ID = "ExcludedApplicationsSharedPreferencesID";
 	public static final String EXCLUDED_APPS_SHARED_PREF_FIRST_TIME_ID = "ExcludedApplicationsSharedPreferencesFirstTimeID";
 	public static final String EXCLUDED_APPS_SHARED_PREF_FIRST_TIME_KEY = "FirstTimeKey";
@@ -38,9 +38,7 @@ public final class Setting {
 			"com.google.process.gapps", "com.motorola.thumbnailservice",
 			"com.arvin.ui", "android.process.media", "com.android.bluetooth",
 			"com.nuance.android.vsuite.vsuiteapp", "com.antivirus","com.android.systemui"};
-	
-	// "com.motorola.usb","com.motorola.calendar","com.motorola.android.motophoneportal.androidui",
-	// ,"com.motorola.widget.weather.accuweather", "com.curvefish.batterylife"
+	//----------------------------------------------
 	public static String daggSav2File = "10000"; // each 10 seconds
 	public static String serverAddress = "http://192.168.0.10:8080/ubiqlogserver/ReceivedData"; // the servlet is not available open source yet.
 	public static String username = "";
