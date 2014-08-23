@@ -54,7 +54,7 @@ public class ActivitySensor2 extends Service implements SensorConnector {
 					}
 				}
 			}
-			myascan = new ActivityRecognitionScan(getApplicationContext());
+			myascan = new ActivityRecognitionScan(getApplicationContext(),ACTIVITY_LOG_INTERVAL);
 			myascan.startActivityRecognitionScan();
 		} catch (Exception e) {
 			Log.e("[Activity-Logging]","----------Error reading the log interval from sensor catalouge."+e.getLocalizedMessage());

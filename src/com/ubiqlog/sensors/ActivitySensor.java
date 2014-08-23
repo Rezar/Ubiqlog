@@ -1,27 +1,11 @@
 package com.ubiqlog.sensors;
 
 import java.util.ArrayList;
-import java.util.Date;
-
-import android.app.IntentService;
-import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
-import android.os.Bundle;
-import android.os.Handler;
 import android.os.IBinder;
-import android.preference.PreferenceManager;
 import android.util.Log;
-
-import com.google.android.gms.location.ActivityRecognitionClient;
-import com.google.android.gms.location.ActivityRecognitionResult;
-import com.google.android.gms.location.DetectedActivity;
-
-import com.ubiqlog.core.DataAcquisitor;
 import com.ubiqlog.core.SensorCatalouge;
-import com.ubiqlog.utils.JsonEncodeDecode;
 
 /*check these examples: 
  * http://www.kpbird.com/2013/07/android-activityrecognition-example.html
@@ -29,28 +13,19 @@ import com.ubiqlog.utils.JsonEncodeDecode;
 */	
 // IntentService is similar to Service but when the service returns result late. 
 //The IntentService can be only triggered from the Main thread
-public class ActivitySensor extends IntentService implements SensorConnector {
+public class ActivitySensor extends Service implements SensorConnector {
 
 
-//	private ActivityRecognitionClient actRecClient;
 	private ActivityRecognitionScan myascan;
-	private Intent inIntent;
 	private static long ACTIVITY_LOG_INTERVAL = 30000L;
-	private static JsonEncodeDecode jsonencoder = new JsonEncodeDecode(); 
 	
-	// Flag that indicates if a request is underway.
-    private boolean mInProgress;
 
-	public ActivitySensor() {
-		super("ActivitySensor");
-	}	
 	
 //	@Override
 	public void onCreate(){
 		super.onCreate();		
 		Log.d("Activity-Logging", "--- onCreate");
-		mInProgress = false;
-
+		
 		SensorCatalouge sencat = new SensorCatalouge(getApplicationContext());
 		try {
 			ArrayList<SensorObj> sens = sencat.getAllSensors();
@@ -66,7 +41,7 @@ public class ActivitySensor extends IntentService implements SensorConnector {
 				}
 			}
 			
-			myascan = new ActivityRecognitionScan(getApplicationContext());
+			myascan = new ActivityRecognitionScan(getApplicationContext(),ACTIVITY_LOG_INTERVAL);
 			myascan.startActivityRecognitionScan();
 		} catch (Exception e) {
 			Log.e("[Activity-Logging]","----------Error reading the log interval from sensor catalouge."+e.getLocalizedMessage());
@@ -74,75 +49,8 @@ public class ActivitySensor extends IntentService implements SensorConnector {
 		}	
 	}
 
-	
-//	@Override
-	public void readSensor() {	    
-		
-//		Log.e("Activity-Logging", "ActivityRecognitionResult.hasResult: "+String.valueOf(ActivityRecognitionResult.hasResult(inIntent)));
-		
-		if (ActivityRecognitionResult.hasResult(inIntent)) {
-	    	ActivityRecognitionResult result = ActivityRecognitionResult.extractResult(inIntent);
-	    	DetectedActivity activity = result.getMostProbableActivity();
-			final int type = activity.getType();
-			String strType = new String();
-			switch(type){
-			  case DetectedActivity.IN_VEHICLE:
-				  strType = "invehicle";
-				  break;
-	          case DetectedActivity.ON_BICYCLE:
-	        	  strType ="onbicycle";
-	        	  break;
-	          case DetectedActivity.ON_FOOT:
-	              strType = "onfoot";
-	              break;
-	          case DetectedActivity.STILL:
-	        	  strType = "still";
-	        	  break;
-	          case DetectedActivity.TILTING:
-	        	  strType ="tilting";
-	        	  break;
-	          case DetectedActivity.UNKNOWN:
-	        	  strType ="unknown";
-	        	  break;
-			}
-			SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-			Editor edt = prefs.edit();
-			String previousActv = prefs.getString("PREVIOUS_ACTIVIY","");
-			long previousDate = prefs.getLong("PREVIOUS_DATE", 0);
-			if (previousActv.length()==0){ // nothing was in the string and it is the first time just initialize
-				previousActv = strType;
-				previousDate = new Date().getTime();
-				Log.e("-----FIRST TIME: type:", previousActv+" date:"+String.valueOf(previousDate));
-				edt.putString("PREVIOUS_ACTIVIY", strType);
-				edt.putLong("PREVIOUS_DATE", previousDate);
-				edt.commit();
-			}else {
-				if (!strType.equalsIgnoreCase(previousActv)){
-					Date readablePrevDate = new Date(previousDate);
-					Date nowDate = new Date();
-					String jsonstr = jsonencoder.EncodeActivity("Activity", readablePrevDate, nowDate, strType, activity.getConfidence());
-					DataAcquisitor.dataBuff.add(jsonstr);
-					Log.e("[Activity-Logging] ----->",jsonstr);
-					edt.putString("PREVIOUS_ACTIVIY", strType);
-					edt.putLong("PREVIOUS_DATE", nowDate.getTime());
-					edt.commit();
-					DataAcquisitor.dataBuff.add(jsonstr);
-				}
-			}
-	    }
-	}
-	
-//	@Override
-	protected void onHandleIntent(Intent intent) {
-		Log.d("Activity-Logging", "--- onHandleIntent"+ "---"+intent.getAction());
-		intent.putExtra("LOG_INTERVAL",ACTIVITY_LOG_INTERVAL );
-		intent.putExtra("STOP",false);
-		inIntent = intent;
-		readSensor();
-		//myascan.stopActivityRecognitionScan();
-	}	
 
-//	@Override
+	
 	public void onDestroy(){
 		super.onDestroy();
 		Log.d("Activity-Logging", "--- onDestroy");
@@ -150,4 +58,20 @@ public class ActivitySensor extends IntentService implements SensorConnector {
 		myascan=null;
 		
 	}
+
+@Override
+public IBinder onBind(Intent arg0) {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+
+
+@Override
+public void readSensor() {
+	// empty
+	// the reading part is done by the google play services
+	// the result is logged by the ActivityResultHandler
+	
+}
 }

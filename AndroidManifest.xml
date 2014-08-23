@@ -27,6 +27,9 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     
     <application android:icon="@drawable/icon" android:label="@string/app_name">
+     <meta-data android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+        
        <uses-library android:name="com.google.android.maps" />
        <activity android:name=".MainUI"
                  android:label="@string/app_name"
@@ -100,6 +103,7 @@
  	    <service android:name="com.ubiqlog.sensors.LocationGSSensor"/>
  	    <service android:exported="false" android:name="com.ubiqlog.sensors.ActivitySensor"/>
  	    <service android:name="com.ubiqlog.core.DataAggregator"/>
+ 	     <service android:name="com.ubiqlog.sensors.ActivityResultHandler"/>
  	    
     </application>
   

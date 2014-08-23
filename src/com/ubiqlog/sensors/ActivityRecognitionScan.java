@@ -29,10 +29,12 @@ public class ActivityRecognitionScan implements
 	private static final String TAG = "ActivityRecognitionScan";
 	private static ActivityRecognitionClient actrecClient2;
 	private static PendingIntent callbackIntent;
+	private long ACTIVITY_LOG_INTERVAL = 30000L;
 	
 	//private long ACTIVITY_LOG_INTERVAL=30000;
-	public ActivityRecognitionScan(Context context) {
+	public ActivityRecognitionScan(Context context, long ACTIVITY_LOG_INTERVAL) {
 		ctx = context;
+		this.ACTIVITY_LOG_INTERVAL = ACTIVITY_LOG_INTERVAL;
 	}
 	/**
 	 * Call this to start a scan - don't forget to stop the scan once it's done.
@@ -43,8 +45,7 @@ public class ActivityRecognitionScan implements
 
 		if(resp == ConnectionResult.SUCCESS){
 			
-			Intent intent = new Intent(ctx, ActivitySensor.class);
-			Bundle bundle = intent.getExtras();	
+			Intent intent = new Intent(ctx, ActivityResultHandler.class);
 			callbackIntent = PendingIntent.getService(ctx, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 			
 			actrecClient2 = new ActivityRecognitionClient(ctx, this, this);
@@ -68,6 +69,7 @@ public class ActivityRecognitionScan implements
 				actrecClient2.disconnect();
 				Log.e(TAG, " acitivy recognition client has been stopped");
 			}
+			
 			actrecClient2 = null;
 			callbackIntent = null;
 //			actrecClient.unregisterConnectionCallbacks(this);
@@ -118,7 +120,6 @@ public class ActivityRecognitionScan implements
 		try{
 			Log.e(TAG," ---Activity recognition client finally has been connected ");
 
-			long interval = 30000;
 //			Intent intent = new Intent(ctx, ActivitySensor.class);
 //			Bundle bundle = intent.getExtras();	
 //			callbackIntent = PendingIntent.getService(ctx, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
@@ -126,8 +127,8 @@ public class ActivityRecognitionScan implements
 //				interval = bundle.getLong("LOG_INTERVAL");
 //			}
 			
-			actrecClient2.requestActivityUpdates(interval, callbackIntent);
-			actrecClient2.disconnect();
+			actrecClient2.requestActivityUpdates(ACTIVITY_LOG_INTERVAL, callbackIntent);
+			//actrecClient2.disconnect();
 		}catch(Exception ex){
 			Log.e("[Activity-Logging]","Error in requesting Activity update "+ex.getMessage());
 			ex.printStackTrace();
