@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <resources>
+        <string name="ubiqlog_api_arch_file">ArchiveAble.txt</string>
+        <string-array name="ubiqlog_api_preservable">
+            <item>tiff</item>
+            <item>tif</item>
+            <item>ogg</item>
+            <item>mp4</item>
+            <item>m2s</item>
+            <item>m2v</item>
+            <item>wav</item>
+            <item>aiff</item>
+        </string-array>
+        <string name="ubiqlog_api_daggSav2File">10000</string>
+        <string name="ubiqlog_api_remote_serverAddress">http://192.168.0.10:8080/ubiqlogserver/ReceivedData</string>
+        <string name="ubiqlog_api_remote_username"></string>
+        <string name="ubiqlog_api_remote_password"></string>
+        <string name="ubiqlog_api_remote_maxDataSize">5MB</string>
+        <string name="ubiqlog_api_remote_filename">mobilefileName</string>
+        <string-array name="ubiqlog_api_coreProcs">
+            <item>com.htc.launcher</item>
+            <item>com.android.phone</item>
+            <item>system</item>
+            <item>android.process.acore</item>
+            <item>com.android.email</item>            
+            
+            <item>com.ubiqlog.ui</item>
+             <item>com.google.process.gapps</item>
+              <item>com.motorola.thumbnailservice</item>
+               <item>com.arvin.ui</item>
+                <item>android.process.media</item>
+                 <item>com.android.bluetooth</item>
+                  <item>com.facebook.katana</item>
+                   <item>com.nuance.android.vsuite.vsuiteapp</item>
+                    <item>com.antivirus</item>
+                     <item>com.android.systemui</item>
+                     <item >com.ubiqlog.app.ui</item>
+                     
+        </string-array>
+        <string name="ubiqlog_api_log_folder">/sdcard/ubiqlog</string>
+        <string name="ubiqlog_api_picture_folder">/sdcard/ubiqlog/picture</string><string name="ubiqlog_api_audio_folder">/sdcard/ubiqlog/audio</string>
+        <string name="ubiqlog_api_database_name">SensorDB</string>
+        <string name="ubiqlog_api_database_table_name">sensors</string>
+        <string name="ubiqlog_api_preferences_filename">UbiqlogVisPrefFile</string>
+        <string name="ubiqlog_api_application_timeinterval">11000</string>
+        <string name="ubiqlog_api_sms_time_frame">5000</string>
+        <string name="ubiqlog_api_call_time_frame">5000</string>
+        <string name="ubiqlog_api_location_time_frame">5000</string>
+        <string name="ubiqlog_api_EXCLUDED_APPS_SHARED_PREF_ID">ExcludedApplicationsSharedPreferencesID</string>
+    </resources>

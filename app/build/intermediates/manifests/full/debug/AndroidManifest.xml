@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ubiqlog.ui"
+    android:versionCode="1"
+    android:versionName="1.3" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- Google maps permissions -->
+    <permission
+        android:name="com.ubiqlog.ui.permission.MAP_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.ubiqlog.ui.permission.MAP_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- Maps API needs OpenGL ES 2.0. -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- Permissions required for GCM -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+ <!-- Optional permission for App measurement to run. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Google Maps v2 api key meta data -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_api_key" />
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name="com.ubiqlog.ui.MainUI"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ubiqlog.ui.LoggingUI"
+            class=".LoggingUI"
+            android:label="Recording" />
+        <activity
+            android:name="com.ubiqlog.ui.SensorsUI"
+            class=".SesnorsUI"
+            android:label="Sensors" />
+        <activity
+            android:name="com.ubiqlog.ui.SensorConfUI"
+            class=".SesnorConfUI"
+            android:label="Sensor Configuration" />
+        <activity
+            android:name="com.ubiqlog.ui.SettingUI"
+            class=".SettingUI"
+            android:label="Application Setting" />
+        <activity
+            android:name="com.ubiqlog.ui.DataManagementUI"
+            class=".DataManagmentUI"
+            android:label="Data Management" />
+        <activity
+            android:name="com.ubiqlog.ui.ExcludeApplicationUI"
+            class="ExcludeApplicationUI"
+            android:label="Exclude Application" />
+        <activity
+            android:name="com.ubiqlog.ui.NetworkSettingsUI"
+            class="NetworkSettingsUI"
+            android:label="Network Settings" />
+        <activity
+            android:name="com.ubiqlog.ui.ToolsUI"
+            class="ToolsUI"
+            android:label="Tools" />
+        <activity
+            android:name="com.ubiqlog.ui.extras.search.SearchMainUI"
+            class=".extras.search.SearchMainUI"
+            android:label="Search" />
+        <activity
+            android:name="com.ubiqlog.ui.extras.search.SearchResultListUI"
+            class=".extras.search.SearchResultListUI"
+            android:label="Search" />
+        <activity
+            android:name="com.ubiqlog.vis.ui.VisMain"
+            android:label="@string/Vis_app_name" />
+        <activity
+            android:name="com.ubiqlog.vis.ui.CallLog"
+            android:label="@string/Vis_call_app_name" />
+        <activity
+            android:name="com.ubiqlog.vis.ui.SmsLog"
+            android:label="@string/Vis_sms_app_name" />
+        <activity
+            android:name="com.ubiqlog.vis.ui.Settings"
+            android:label="@string/Vis_settings_app_name" />
+        <activity
+            android:name="com.ubiqlog.vis.ui.ApplicationLog"
+            android:label="@string/Vis_application_app_name" />
+        <activity
+            android:name="com.ubiqlog.vis.ui.BluetoothLog"
+            android:label="@string/Vis_bluetooth_app_name" />
+        <activity
+            android:name="com.ubiqlog.vis.ui.MovementLog"
+            android:label="@string/Vis_accelerometer_app_name" />
+        <activity
+            android:name="com.ubiqlog.vis.ui.LocationLog"
+            android:label="@string/Vis_location_app_name" />
+
+        <service android:name="com.ubiqlog.ui.UbiqlogStatusBar" />
+
+        <!-- ############# Following fragment used to run the UbiqLog engine after the boot############# -->
+
+        <receiver
+            android:name="com.ubiqlog.core.AutoStartUbiqlog"
+            android:enabled="true"
+            android:exported="true"
+            android:label="AutoStartUbiqlog" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.ubiqlog.core.Engine"
+            android:label="Engine" >
+            <intent-filter>
+                <action android:name="com.ubiqlog.core.Engine" />
+            </intent-filter>
+        </service>
+        <!-- ######################################################################################### -->
+        <service android:name="com.ubiqlog.sensors.CallSensor" />
+        <service android:name="com.ubiqlog.sensors.SMSSensor" />
+        <service android:name="com.ubiqlog.sensors.ApplicationSensor" />
+        <service android:name="com.ubiqlog.sensors.PictureSensor" />
+        <service android:name="com.ubiqlog.sensors.BluetoothSensor" />
+        <service android:name="com.ubiqlog.sensors.BluetoothSensor_NOTIMER" />
+        <service android:name="com.ubiqlog.sensors.WiFiSensor" />
+
+        <!--
+        <service android:name="com.ubiqlog.sensors.BTReceiver">
+            <intent-filter>
+                <action android:name="android.content.Intent.BluetoothDevice.ACTION_FOUND"/>
+            </intent-filter>
+        </service>
+        -->
+        <receiver android:name="com.ubiqlog.sensors.TellSensor" >
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.ubiqlog.sensors.HardwareSensor_OLD" />
+        <!-- <service android:name="com.ubiqlog.sensors.MockHardwareSensors"/> -->
+        <service android:name="com.ubiqlog.sensors.LocationSensor" />
+        <service android:name="com.ubiqlog.sensors.LocationGSSensor" />
+        <service
+            android:name="com.ubiqlog.sensors.ActivitySensor"
+            android:exported="false" />
+        <service android:name="com.ubiqlog.core.DataAggregator" />
+        <service android:name="com.ubiqlog.sensors.ActivityResultHandler" />
+        <service
+            android:name="com.ubiqlog.sensors.InteractionSensor"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.ubiqlog.sensors.BatterySensor"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.ubiqlog.sensors.AccelerometerSensor"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.ubiqlog.sensors.RawAudioSensor"
+            android:enabled="true"
+            android:exported="true" />
+        <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+            android:theme="@style/Theme.IAPTheme" />
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.android.gms.measurement.AppMeasurementContentProvider"
+            android:authorities="com.ubiqlog.ui.google_measurement_service"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

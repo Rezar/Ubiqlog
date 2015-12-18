@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Soheil KHOSRAVIPOUR -->
+<!-- Date: 07.2010 -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:textColor="#000"
+    android:textSize="15sp" >
+</TextView>
