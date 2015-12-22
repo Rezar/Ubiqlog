@@ -18,6 +18,8 @@ import android.widget.Toast;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.ubiqlog.common.Setting;
+import com.ubiqlog.sensors.AccelerometerSensor;
+import com.ubiqlog.sensors.AmbientLightSensor;
 import com.ubiqlog.sensors.ApplicationSensor;
 import com.ubiqlog.sensors.AudioSensor;
 import com.ubiqlog.sensors.BatterySensor;
@@ -29,10 +31,12 @@ import com.ubiqlog.sensors.InteractionSensor;
 import com.ubiqlog.sensors.LocationGSSensor;
 import com.ubiqlog.sensors.LocationSensor;
 import com.ubiqlog.sensors.PictureSensor;
+import com.ubiqlog.sensors.RawAudioSensor;
 import com.ubiqlog.sensors.SMSSensor;
 import com.ubiqlog.sensors.SensorObj;
 import com.ubiqlog.sensors.WiFiSensor;
 import com.ubiqlog.ui.UbiqlogStatusBar;
+import com.ubiqlog.utils.FeatureCheck;
 import com.ubiqlog.utils.IOManager;
 
 public class Engine extends Service {
@@ -143,7 +147,7 @@ public class Engine extends Service {
 					}else{
 						Log.e("[Engine]", "Google Play Service hasn't installed");
 					}
-				}else if (cs.getSensorName().contains("LOCATION")){
+				} else if (cs.getSensorName().contains("LOCATION")){
 					int resp = GooglePlayServicesUtil.isGooglePlayServicesAvailable(ctx);
 					if(resp == ConnectionResult.SUCCESS){
 						Log.e("[Engine]", "Google Play Service is installed and available.");
@@ -156,6 +160,10 @@ public class Engine extends Service {
 						i.setClassName(app,  com.ubiqlog.sensors.LocationSensor.class.getName()) ;
 						ctx.startService(i);
 					}
+				} else if (cs.getSensorName().contains("AMBIENT") && FeatureCheck.hasLightFeature(ctx)) { // other sensors and not Google API based
+					Intent i = new Intent();
+					i.setClassName(app, cs.getClassName());
+					ctx.startService(i);
 				} else { // other sensors and not Google API based
 					Intent i = new Intent();
 					i.setClassName(app, cs.getClassName()) ;
@@ -227,7 +235,6 @@ public class Engine extends Service {
 		i13.setClass(app, InteractionSensor.class);
 		ctx.stopService(i13);
 
-		/*
 		Intent i14 = new Intent();
 		i14.setClass(app, AccelerometerSensor.class);
 		ctx.stopService(i14);
@@ -235,7 +242,12 @@ public class Engine extends Service {
 		Intent i15 = new Intent();
 		i15.setClass(app, RawAudioSensor.class);
 		ctx.stopService(i15);
-		*/
+
+		if (FeatureCheck.hasLightFeature(ctx)) {
+			Intent i16 = new Intent();
+			i16.setClass(app, AmbientLightSensor.class);
+			ctx.stopService(i16);
+		}
 	}
 
 }

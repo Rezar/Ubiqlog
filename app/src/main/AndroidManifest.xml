@@ -27,6 +27,8 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <!-- Google maps permissions -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <permission
         android:name="com.ubiqlog.ui.permission.MAP_RECEIVE"
         android:protectionLevel="signature" />
@@ -38,7 +40,18 @@
         android:glEsVersion="0x00020000"
         android:required="true" />
 
-    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- Accelerometer feature -->
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+    <!-- Light feature -->
+    <uses-feature
+        android:name="android.hardware.sensor.light"
+        android:required="true" />
+    <!-- microphone feature -->
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="true" />
 
     <application
         android:icon="@drawable/icon"
@@ -173,7 +186,7 @@
         </receiver>
 
         <service android:name="com.ubiqlog.sensors.HardwareSensor_OLD" />
-        <!--         <service android:name="com.ubiqlog.sensors.MockHardwareSensors"/> -->
+        <!-- <service android:name="com.ubiqlog.sensors.MockHardwareSensors"/> -->
         <service android:name="com.ubiqlog.sensors.LocationSensor" />
         <service android:name="com.ubiqlog.sensors.LocationGSSensor" />
         <service
@@ -181,20 +194,29 @@
             android:exported="false" />
         <service android:name="com.ubiqlog.core.DataAggregator" />
         <service android:name="com.ubiqlog.sensors.ActivityResultHandler" />
+
+        <!--
+             Services added in December 2015
+             by AP
+        -->
         <service
             android:name="com.ubiqlog.sensors.InteractionSensor"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
         <service
             android:name="com.ubiqlog.sensors.BatterySensor"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
         <service
             android:name="com.ubiqlog.sensors.AccelerometerSensor"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
         <service
             android:name="com.ubiqlog.sensors.RawAudioSensor"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.ubiqlog.sensors.AmbientLightSensor"
             android:enabled="true"
             android:exported="true"></service>
     </application>

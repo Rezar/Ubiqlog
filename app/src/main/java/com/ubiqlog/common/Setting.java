@@ -75,15 +75,26 @@ public final class Setting {
 	public static final int bufferMaxSize = 1;
 
 	public static final String LOG_EX_FOLDER = "ubiqlogex";
+	public static final String DEFAULT_FOLDER = "ubiqlog";
 
 	public static final SimpleDateFormat timestampFormat = new SimpleDateFormat("E MMM d HH:mm:ss zzz yyyy"); // e.g. 'Wed Mar 04 00:03:56 GMT+01:00 2015'
+	public static final SimpleDateFormat filenameFormat = new SimpleDateFormat("M-d-yyyy");
 	public static final String dataFileName_ScreenUsage = "ScreenUsage";
-	public static final String dataFileName_Battery = "BatterySensor";
-	public static final String dataFileName_Accelerometer = "AccelerometerSensor";
-	public static final String dataFileName_Raw_Audio = "RawAudioSensor";
+	public static final String dataFileName_Battery = "Battery";
+	public static final String dataFileName_Accelerometer = "Accelerometer";
+	public static final String dataFileName_Raw_Audio = "RawAudio";
+	public static final String dataFileName_AmbientLightSensor = "AmbientLight";
 
-
+	// Accelerometer delay setting
+	public static final Long ACCELEROMETER_SAVE_DELAY = 2000L; // 2000 milliseconds
+	// Battery delay setting
 	public static long BATTERY_MIN_SAMPLE_INTERVAL = 60000L; // 1 minutes (1000 * 60 * 10)
+	// Ambient Light settings
+	public static int LIGHT_SAMPLE_AMNT = 3;
+	public static long LIGHT_SENSOR_SAMPLE_INTERVAL = 30000L; // 30 Seconds
+	// Raw Audio settings
+	public static long RAW_AUDIO_DELAY = 5000L; // 30 Seconds
+
 
 
 	public static Setting Instance(Context ctx){

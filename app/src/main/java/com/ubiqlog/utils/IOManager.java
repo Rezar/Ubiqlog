@@ -24,11 +24,11 @@ public class IOManager {
 	private String strPath;
 
 	public IOManager() {
-		this.strPath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/" + Setting.LOG_EX_FOLDER;
+		this.strPath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/" + Setting.DEFAULT_FOLDER;
 	}
 
-	public IOManager(String filename) {
-		this.strPath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/" + Setting.LOG_EX_FOLDER;
+	public IOManager(String filename, String homeFolder) {
+		this.strPath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/" + homeFolder;
 		this.currentFileName = filename;
 	}
 
@@ -83,8 +83,8 @@ public class IOManager {
 			dirs.mkdirs();
 		}
 
-		File logFile = new File(dirs, getCurrentFilename());
-
+		String fileName = Setting.filenameFormat.format(new Date()) + "_" + getCurrentFilename();
+		File logFile = new File(dirs, fileName);
 		try {
 			FileWriter writer = new FileWriter(logFile, append);
 			for (String s : dataAcq.getDataBuffer()) {

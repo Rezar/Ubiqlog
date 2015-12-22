@@ -117,8 +117,11 @@ public class SensorCatalouge {
 			//SensorController ctrl = new SensorController(con);
 			if (getAllSensors().size() == 0) { // There is no data there
 				// Newly added 2015 by AP
-				addSensor("BATTERY", com.ubiqlog.sensors.BatterySensor.class.getName(), "Enable = yes, Scan interval=600000", null);				   // 10 seconds
-				addSensor("SCREEN_INTERACTION", com.ubiqlog.sensors.InteractionSensor.class.getName(), "Enable = yes, Scan interval=1000", null);  // 1 second
+				addSensor("BATTERY", com.ubiqlog.sensors.BatterySensor.class.getName(), "Enable = yes", null);				   // 10 seconds
+				addSensor("SCREEN_INTERACTION", com.ubiqlog.sensors.InteractionSensor.class.getName(), "Enable = yes", null);  // 1 second
+				addSensor("ACCELEROMETER", com.ubiqlog.sensors.AccelerometerSensor.class.getName(), "Enable = yes", null);
+				addSensor("RAW_AUDIO", com.ubiqlog.sensors.RawAudioSensor.class.getName(), "Enable = yes", null);
+				addSensor("AMBIENT_LIGHT", com.ubiqlog.sensors.AmbientLightSensor.class.getName(), "Enable = yes", null);
 
 				addSensor("APPLICATION",  com.ubiqlog.sensors.ApplicationSensor.class.getName(),"Enable = yes, Record interval=10000", null);
 				addSensor("CALL", com.ubiqlog.sensors.CallSensor.class.getName(),"Enable = yes, Record communication = no","CallAnnotation");
@@ -126,20 +129,16 @@ public class SensorCatalouge {
 				addSensor("BLUETOOTH", com.ubiqlog.sensors.BluetoothSensor.class.getName(),"Enable = no, Scan interval=600000", null); // each 10 minutes it scans for changes
 				addSensor("WIFI", com.ubiqlog.sensors.WiFiSensor.class.getName(), "Enable = yes, Scan interval=600000",null);
 				addSensor("LOCATION", com.ubiqlog.sensors.LocationSensor.class.getName(), "Enable = yes", null);
-//				addSensor("ACCELEROMETER", com.ubiqlog.sensors.Hardware.class.getName(), "Enable = no",null);
+				// addSensor("ACCELEROMETER", com.ubiqlog.sensors.Hardware.class.getName(), "Enable = no",null);
 				addSensor("PICTURE", com.ubiqlog.sensors.PictureSensor.class.getName(), "Enable = no, Record interval=30000", null);
 				addSensor("AUDIO", com.ubiqlog.sensors.AudioSensor.class.getName(), "Enable = no", null);
 				addSensor("ACTIVITY", com.ubiqlog.sensors.ActivitySensor.class.getName(), "Enable = yes, Scan interval=30000",null);
 				addSensor("LOCATION_FUSE", com.ubiqlog.sensors.LocationGSSensor.class.getName(), "Enable = yes, Scan interval=60000", null);
 
-
-				//addSensor("ACCELEROMETER", com.ubiqlog.sensors.AccelerometerSensor.class.getName(), "Enable = yes, Scan interval=60000", null);
-				//addSensor("RAW_AUDIO", com.ubiqlog.sensors.RawAudioSensor.class.getName(), "Enable = yes, Scan interval=60000", null);
-
-				}
-//			else if (getAllSensors().size()<8) {
-//			addSensor(SensorName.AUDIO, ctrl.getSensorClassName(SensorName.AUDIO), "Enable = no", null);
-//		}
+			}
+			// else if (getAllSensors().size()<8) {
+			//     addSensor(SensorName.AUDIO, ctrl.getSensorClassName(SensorName.AUDIO), "Enable = no", null);
+			// }
 		} catch (Exception e) {
 			Log.e("SensorCatalouge","---------Can not initiate Sensor Catalouge------"+ e.getMessage());
 			e.printStackTrace();

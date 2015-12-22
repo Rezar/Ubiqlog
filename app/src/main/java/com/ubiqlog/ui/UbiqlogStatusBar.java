@@ -35,7 +35,7 @@ public class UbiqlogStatusBar extends Service {
 
 	@Override
 	public void onStart(Intent intent, int startId) {
-		int icon = R.drawable.icon; // icon from resources
+		int icon = R.drawable.icon_outline; // icon from resources
 		CharSequence tickerText = "Hello"; // ticker-text
 		long when = System.currentTimeMillis(); // notification time
 		Context context = getApplicationContext(); // application Context

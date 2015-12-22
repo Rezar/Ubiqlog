@@ -27,6 +27,7 @@ public class BatterySensor extends Service {
     private final String TAG = this.getClass().getSimpleName();
     private int lastVal;
     private long lastVal_timestamp;
+    private boolean isRegistered = false;
 
     @Override
     public void onCreate() {
@@ -35,9 +36,10 @@ public class BatterySensor extends Service {
         mIntentFilter = new IntentFilter();
         mIntentFilter.addAction(Intent.ACTION_BATTERY_CHANGED);
         batteryReceiver = new BatteryReceiver();
-        mDataBuffer = new DataAcquisitor(Setting.LOG_EX_FOLDER, Setting.dataFileName_Battery);
+        mDataBuffer = new DataAcquisitor(Setting.LOG_FOLDER, Setting.dataFileName_Battery);
         //mSA_batteryBuffer = new DataAcquisitor("SA/BatterySensor");
         lastVal_timestamp = System.currentTimeMillis();
+        isRegistered = false;
     }
 
     @Override
@@ -45,16 +47,24 @@ public class BatterySensor extends Service {
         Log.d("Battery-Logging", "--- onStartCommand");
         if (intent != null) {
             this.registerReceiver(batteryReceiver, mIntentFilter);
+            isRegistered = true;
+
         }
         return START_STICKY;
     }
 
     @Override
     public void onDestroy() {
+        super.onDestroy();
         mDataBuffer.flush(true);
         //mSA_batteryBuffer.flush(true);
-        unregisterReceiver(batteryReceiver);
-        super.onDestroy();
+        if (batteryReceiver != null && isRegistered) {
+            unregisterReceiver(batteryReceiver);
+            isRegistered = false;
+        } else {
+            batteryReceiver = null;
+            isRegistered = false;
+        }
 
         Intent in = new Intent();
         in.setAction("BatterySensor.StartkilledService");
@@ -82,24 +92,22 @@ public class BatterySensor extends Service {
                         (status == BatteryManager.BATTERY_STATUS_FULL);
 
 
-                /*
                 if (level % 5 == 0) {
                     //store in buff
                     //Log.d(TAG, "Level:" + level + ", Charging:" + isCharging);
                     String encoded = JsonEncodeDecode.EncodeBattery(level, isCharging, new Date());
-                    mDataBuffer.insert(encoded, true, Setting.bufferMaxSize);
+                    //mDataBuffer.insert(encoded, true, Setting.bufferMaxSize);
+                    DataAcquisitor.dataBuff.add(encoded);
                     //mDataBuffer.flush(true);
-
 
                     //String encoded_SA = SemanticTempCSVUtil.encodeBattery(level, isCharging, new Date());
                     //mSA_batteryBuffer.insert(encoded_SA, true, Setting.bufferMaxSize);
                     //mSA_batteryBuffer.flush(true);
 
                 }
-                */
 
-                String encoded = JsonEncodeDecode.EncodeBattery(level, isCharging, new Date());
-                mDataBuffer.insert(encoded, true, Setting.bufferMaxSize);
+                //String encoded = JsonEncodeDecode.EncodeBattery(level, isCharging, new Date());
+                //mDataBuffer.insert(encoded, true, Setting.bufferMaxSize);
             }
         }
     }

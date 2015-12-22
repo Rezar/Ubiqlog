@@ -78,7 +78,7 @@ public class InteractionSensor extends Service {
         mHandler.post(mRunnable);
 
         nextActivePair = null;
-        mDataBuffer = new DataAcquisitor(Setting.LOG_EX_FOLDER, Setting.dataFileName_ScreenUsage);
+        mDataBuffer = new DataAcquisitor(Setting.LOG_FOLDER, Setting.dataFileName_ScreenUsage);
         //mSA_AppUsage = new DataAcquisitor("SA/" + Setting.dataFolderName_ScreenUsage);
 
         IntentFilter filter = new IntentFilter(Intent.ACTION_SCREEN_ON);
@@ -229,7 +229,8 @@ public class InteractionSensor extends Service {
                 //store in buff / write  file
                 String encoded = JsonEncodeDecode.EncodeScreenUsage(Integer.toString(startHour), Integer.toString(endHour),
                         startTime.getTime(), endTime.getTime(), Tminutes, MinutesInStartHour, MinutesInEndHour);
-                mDataBuffer.insert(encoded, true, Setting.bufferMaxSize);
+                //mDataBuffer.insert(encoded, true, Setting.bufferMaxSize);
+                DataAcquisitor.dataBuff.add(encoded);
 
                 /*
                 String encoded_SA = SemanticTempCSVUtil.encodedScreenUsage(Integer.toString(startHour),Integer.toString(endHour),

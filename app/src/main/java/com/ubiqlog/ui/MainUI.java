@@ -206,6 +206,9 @@ public class MainUI extends Activity {
 					|| HardwareSensor_OLD.class.getName().equals(service.service.getClassName())
 					|| PictureSensor.class.getName().equals(service.service.getClassName())
 					|| AudioSensor.class.getName().equals(service.service.getClassName())
+					|| AccelerometerSensor.class.getName().equals(service.service.getClassName())
+					|| BatterySensor.class.getName().equals(service.service.getClassName())
+					|| InteractionSensor.class.getName().equals(service.service.getClassName())
 					) { //|| ActivitySensor.class.getName().equals(service.service.getClassName())
 				return true;
 			}

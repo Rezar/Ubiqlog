@@ -170,12 +170,12 @@ public class JsonEncodeDecode {
 
 
 	/** Author: AP
-	 * obj[0]: appname
-	 * obj[1]: startTime
-	 * obj[2]: endTime
+	 * obj[0]:
+	 * obj[1]:
+	 * obj[2]:
 	 *
 	 * @param  , Date
-	 * @return encoded app usage string
+	 * @return encoded screen usage string
 	 */
 	public static String EncodeScreenUsage(String startHour, String endHour, Date starttimeStamp, Date endtimeStamp, Double Tmin
 			, Double MinStartHour, Double MinEndHour) {
@@ -183,6 +183,7 @@ public class JsonEncodeDecode {
 		JSONObject jsonObject = new JSONObject();
 
 		try {
+			jsonObject.put("sensor_name", "Screen_Interaction");
 			jsonObject.put("start_hour", startHour);
 			jsonObject.put("end_hour", endHour);
 			jsonObject.put("start_timestamp", Setting.timestampFormat.format(starttimeStamp));
@@ -202,8 +203,8 @@ public class JsonEncodeDecode {
 	/** Author: AP
 	 * @param encoded JSON String
 	 * @return obj[0] : Date timestamp
-	 * obj[1] : int percent
-	 * obj[2] : boolean charging
+	 * obj[1] :
+	 * obj[2] :
 	 */
 	public Object[] DecodeScreenUsage(String encoded) {
 
@@ -229,6 +230,15 @@ public class JsonEncodeDecode {
 		return null;
 	}
 
+	/** Author: AP
+	 * Battery
+	 * obj[0]: x
+	 * obj[1]: y
+	 * obj[2]: timeStamp
+	 *
+	 * @param  --float , float , Date
+	 * @return encoded accelerometer string
+	 */
 	public static String EncodeBattery(int percent, boolean charging, Date timeStamp) {
 		JSONObject jsonObject = new JSONObject();
 		JSONObject sensorDataObj = new JSONObject();
@@ -276,6 +286,172 @@ public class JsonEncodeDecode {
 		}
 		return null;
 
+	}
+
+	/** Author: AP
+	 *  Accelerometer
+	 * obj[0]: x
+	 * obj[1]: y
+	 * obj[2]: timeStamp
+	 *
+	 * @param  --float , float , Date
+	 * @return encoded accelerometer string
+	 */
+	public static String EncodeAccelerometer(float x, float y, Date timeStamp) {
+		JSONObject jsonObject = new JSONObject();
+		JSONObject sensorDataObj = new JSONObject();
+		try {
+			jsonObject.put("sensor_name", "Accelerometer");
+			jsonObject.put("timestamp", Setting.timestampFormat.format(timeStamp));
+
+			sensorDataObj.put("x-axis", x);
+			sensorDataObj.put("y-axis", y);
+
+			jsonObject.put("sensor_data", sensorDataObj);
+
+			return jsonObject.toString();
+
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	/** Accelerometer
+	 * @param encoded
+	 * @return obj[0] : Date timestamp
+	 * obj[1] : float x
+	 * obj[2] : float y
+	 */
+	public Object[] DecodeAccelerometer(String encoded) {
+		if (encoded != null && !encoded.isEmpty()) {
+			try {
+				JSONObject jObj = new JSONObject(encoded);
+				Date date = Setting.timestampFormat.parse(jObj.get("timestamp").toString());
+
+				JSONObject sensorData = jObj.getJSONObject("sensor_data");
+
+				float x = Float.valueOf(String.format(sensorData.get("x-axis").toString(), ".2f"));
+				float y = Float.valueOf(String.format(sensorData.get("y-axis").toString(), ".2f"));
+
+				return new Object[]{date, x, y};
+
+			} catch (JSONException e) {
+				e.printStackTrace();
+			} catch (ParseException e) {
+				e.printStackTrace();
+			}
+		}
+		return null;
+	}
+
+	/** Author: AP
+	 *  RawAudio
+	 * obj[0]: encodedData
+	 * obj[1]: timeStamp
+	 *
+	 * @param  --String , Date
+	 * @return encoded RawAudio string
+	 */
+	public static String EncodeRawAudio(String encodedData, Date timeStamp) {
+		JSONObject jsonObject = new JSONObject();
+		JSONObject sensorDataObj = new JSONObject();
+		try {
+			jsonObject.put("sensor_name", "RawAudio");
+			jsonObject.put("timestamp", Setting.timestampFormat.format(timeStamp));
+
+			sensorDataObj.put("data", encodedData);
+
+			jsonObject.put("sensor_data", sensorDataObj);
+
+			return jsonObject.toString();
+
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	/** Raw Audio
+	 * @param encoded
+	 * @return obj[0] : Date timestamp
+	 * obj[1] :  String encodedData
+	 *
+	 */
+	public Object[] DecodeRawAudio(String encoded) {
+		if (encoded != null && !encoded.isEmpty()) {
+			try {
+				JSONObject jObj = new JSONObject(encoded);
+				Date date = Setting.timestampFormat.parse(jObj.get("timestamp").toString());
+
+				JSONObject sensorData = jObj.getJSONObject("sensor_data");
+
+				// Base64 representation of byte[]
+				String encodedData = sensorData.getString("data");
+
+				return new Object[]{date, encodedData};
+
+			} catch (JSONException e) {
+				e.printStackTrace();
+			} catch (ParseException e) {
+				e.printStackTrace();
+			}
+		}
+		return null;
+	}
+
+	/** Author: AP
+	 *  AmbientLight
+	 * obj[0]: encodedData
+	 * obj[1]: timeStamp
+	 *
+	 * @param  --String , Date
+	 * @return encoded RawAudio string
+	 */
+	public static String EncodeAmbientLight(float lux, Date timeStamp) {
+		JSONObject jsonObject = new JSONObject();
+		JSONObject sensorDataObj = new JSONObject();
+		try {
+			jsonObject.put("sensor_name", "AmbientLight");
+			jsonObject.put("timestamp", Setting.timestampFormat.format(timeStamp));
+
+			sensorDataObj.put("lux", lux);
+
+			jsonObject.put("sensor_data", sensorDataObj);
+
+			return jsonObject.toString();
+
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	/** Raw Audio
+	 * @param encoded
+	 * @return obj[0] : Date timestamp
+	 * obj[1] :  String encodedData
+	 *
+	 */
+	public Object[] DecodeAmbientLight(String encoded) {
+		if (encoded != null && !encoded.isEmpty()) {
+			try {
+				JSONObject jObj = new JSONObject(encoded);
+				Date date = Setting.timestampFormat.parse(jObj.get("timestamp").toString());
+
+				JSONObject sensorData = jObj.getJSONObject("sensor_data");
+
+				float lux = Float.valueOf(String.format(sensorData.get("lux").toString(), ".2f"));
+
+				return new Object[]{date, lux};
+
+			} catch (JSONException e) {
+				e.printStackTrace();
+			} catch (ParseException e) {
+				e.printStackTrace();
+			}
+		}
+		return null;
 	}
 
 }
