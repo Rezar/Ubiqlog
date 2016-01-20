@@ -1,20 +1,20 @@
 package com.ubiqlog.utils;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import com.ubiqlog.common.Setting;
 import com.ubiqlog.utils.SensorState.Movement;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class JsonEncodeDecode {
 
 	public static final SimpleDateFormat dateformat = new SimpleDateFormat("M-d-yyyy HH:mm:ss");
-	
-	public static String EncodeApplication(String friendlyName, String processName, Date startTime, Date endTime) {	
+
+	public static String EncodeApplication(String friendlyName, String processName, Date startTime, Date endTime) {
 		StringBuilder encodedString = new StringBuilder("");
 		encodedString = encodedString.append("{\""+friendlyName+"\":{\"ProcessName\":\""
 				+ processName + "\",\"Start\":\""
@@ -22,32 +22,32 @@ public class JsonEncodeDecode {
 				+ dateformat.format(endTime) + "\"}}");
 		return encodedString.toString();
 	}
-	
+
 
 	public static String EncodeCall(String friendlyName, String phoneNumber, int duration, Date dateTime, int type,
-			Boolean withAnnotation, String annotationName) {
+									Boolean withAnnotation, String annotationName) {
 		StringBuilder annotationString  = new StringBuilder();
 		if(withAnnotation){
 			annotationString.append(", \"metadata\": {\"name\": \"" + annotationName + "\"}");
 		}
-		
+
 		StringBuilder encodedString = new StringBuilder("");
 		encodedString = encodedString.append("{\""+friendlyName+"\":{\"Number\":\""
 				+ phoneNumber+ "\",\"Duration\":\""
 				+ duration+ "\",\"Time\":\""
 				+ dateformat.format(dateTime) + "\",\"Type\":\""
 				+ type + "\""+ annotationString+ "}}");
-			
+
 		return encodedString.toString();
 	}
-	
+
 	public static String EncodeSms(String friendlyName, String phoneNumber, int type, Date dateTime, String body,
-			Boolean withAnnotation, String annotationName) {
+								   Boolean withAnnotation, String annotationName) {
 		StringBuilder annotationString  = new StringBuilder();
 		if(withAnnotation && annotationName!=null){
 			annotationString.append(", \"metadata\": {\"name\": \"" + annotationName + "\"}");
 		}
-		
+
 		StringBuilder encodedString = new StringBuilder("");
 		encodedString = encodedString.append("{\""+friendlyName+"\":{\"Address\":\""
 				+ phoneNumber+ "\",\"type\":\""
@@ -56,14 +56,14 @@ public class JsonEncodeDecode {
 				+ body+ "\",\"Type\":\""
 				+ type + "\""+ annotationString+ "}}");
 
-		return encodedString.toString();	
-		
+		return encodedString.toString();
+
 	}
-	
-	
-	public static String EncodeLocation(String friendlyName, double latitude, double longitude, 
-			double altitude,Date dateTime, float accuracy, String provider) {
-		
+
+
+	public static String EncodeLocation(String friendlyName, double latitude, double longitude,
+										double altitude,Date dateTime, float accuracy, String provider) {
+
 		StringBuilder encodedString = new StringBuilder("");
 		encodedString = encodedString.append("{\""+friendlyName+"\":{\"Latitude\":\""
 				+ latitude + "\",\"Longtitude\":\""
@@ -74,26 +74,26 @@ public class JsonEncodeDecode {
 				+ provider + "\"}}");
 
 		return encodedString.toString();
-		
+
 	}
-	public static String EncodeLocationGS(String friendlyName, double latitude, double longitude, 
-			double altitude,Date dateTime, float accuracy, String provider, float speed) {
-		
+	public static String EncodeLocationGS(String friendlyName, double latitude, double longitude,
+										  double altitude,Date dateTime, float accuracy, String provider, float speed) {
+
 		StringBuilder encodedString = new StringBuilder("");
-		encodedString = encodedString.append("{\""+friendlyName+"\":{\"Latitude\":\""+ latitude + 
-				"\",\"Longtitude\":\""+ longitude + 
-				"\",\"Altitude\":\""+ altitude + 
-				"\",\"time\":\""+  dateformat.format(dateTime) + 
-				"\",\"Accuracy\":\""+ accuracy + 
-				"\",\"Provider\":\""+ provider + 
-				"\",\"Speed\":\""+ String.valueOf(speed) + 
+		encodedString = encodedString.append("{\""+friendlyName+"\":{\"Latitude\":\""+ latitude +
+				"\",\"Longtitude\":\""+ longitude +
+				"\",\"Altitude\":\""+ altitude +
+				"\",\"time\":\""+  dateformat.format(dateTime) +
+				"\",\"Accuracy\":\""+ accuracy +
+				"\",\"Provider\":\""+ provider +
+				"\",\"Speed\":\""+ String.valueOf(speed) +
 				"\"}}");
 
 		return encodedString.toString();
-		
+
 	}
 	public static String EncodePicture(String friendlyName, String fullPath, Date dateTime) {
-		
+
 		StringBuilder encodedString = new StringBuilder("");
 		encodedString = encodedString.append("{\""+friendlyName+"\":{\"FullPath\":\""
 				+ fullPath + "\",\"Time\":\""
@@ -101,19 +101,19 @@ public class JsonEncodeDecode {
 
 		return encodedString.toString();
 	}
-	
+
 	public static String EncodeAudio(String friendlyName, String fullPath, Date dateTime) {
-		
+
 		StringBuilder encodedString = new StringBuilder("");
 		encodedString = encodedString.append("{\""+friendlyName+"\":{\"FullPath\":\""
 				+ fullPath + "\",\"Time\":\""+ dateformat.format(dateTime) + "\"}}");
 
 		return encodedString.toString();
 	}
-	
-	
-	public static String EncodeBluetooth(String friendlyName, String deviceName, 
-			String deviceAddress, String bindState, Date timeStamp) {
+
+
+	public static String EncodeBluetooth(String friendlyName, String deviceName,
+										 String deviceAddress, String bindState, Date timeStamp) {
 		StringBuilder encodedString = new StringBuilder("");
 		encodedString = encodedString.append("{\""+friendlyName+"\":{\"name\":\""
 				+ deviceName + "\",\"address\":\""
@@ -146,7 +146,7 @@ public class JsonEncodeDecode {
 
 		return encodedString.toString();
 	}
-	
+
 	public static String[] DecodeMovement(String jsonString) {
 		String[] split = jsonString.split("\"");
 		String[] decodedString = new String[3];
@@ -157,7 +157,7 @@ public class JsonEncodeDecode {
 
 		return decodedString;
 	}
-	
+
 	public static String EncodeActivity(String friendlyName, Date  timestampStart, Date timestampEnd, String intype, int inconfidence) {
 		StringBuilder encodedString = new StringBuilder("");
 		encodedString = encodedString.append("{\""+friendlyName+"\":{\"start\":\""
@@ -181,17 +181,18 @@ public class JsonEncodeDecode {
 			, Double MinStartHour, Double MinEndHour) {
 
 		JSONObject jsonObject = new JSONObject();
+		JSONObject screenobj = new JSONObject();
 
 		try {
-			jsonObject.put("sensor_name", "Screen_Interaction");
-			jsonObject.put("start_hour", startHour);
-			jsonObject.put("end_hour", endHour);
-			jsonObject.put("start_timestamp", Setting.timestampFormat.format(starttimeStamp));
-			jsonObject.put("end_timestamp", Setting.timestampFormat.format(endtimeStamp));
-			jsonObject.put("min_elapsed", Tmin);
-			jsonObject.put("min_start_hour", MinStartHour);
-			jsonObject.put("min_end_hour", MinEndHour);
 
+			screenobj.put("start_hour", startHour);
+			screenobj.put("end_hour", endHour);
+			screenobj.put("start_timestamp", Setting.timestampFormat.format(starttimeStamp));
+			screenobj.put("end_timestamp", Setting.timestampFormat.format(endtimeStamp));
+			screenobj.put("min_elapsed", Tmin);
+			screenobj.put("min_start_hour", MinStartHour);
+			screenobj.put("min_end_hour", MinEndHour);
+			jsonObject.put("Screen_Interaction", screenobj);
 			return jsonObject.toString();
 
 		} catch (JSONException e) {
@@ -316,6 +317,25 @@ public class JsonEncodeDecode {
 		}
 		return null;
 	}
+	//recoding element
+	public static String EncodeAccelerometerIn_X(float collect_interval,String array,Date starttimeStamp) {
+		JSONObject jsonObject = new JSONObject();
+		JSONObject sensorobj = new JSONObject();
+		try {
+
+
+			sensorobj.put("start_timestamp", Setting.timestampFormat.format(starttimeStamp));
+			sensorobj.put("collect_interval", collect_interval/1000+"seconds");
+			sensorobj.put("Accelerometer_axis", "X-axis");
+			sensorobj.put("sensor_data_array", array);
+			jsonObject.put("Accelerometer",sensorobj);
+			return jsonObject.toString();
+
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
 
 	/** Accelerometer
 	 * @param encoded
@@ -412,13 +432,9 @@ public class JsonEncodeDecode {
 		JSONObject jsonObject = new JSONObject();
 		JSONObject sensorDataObj = new JSONObject();
 		try {
-			jsonObject.put("sensor_name", "AmbientLight");
-			jsonObject.put("timestamp", Setting.timestampFormat.format(timeStamp));
-
 			sensorDataObj.put("lux", lux);
-
-			jsonObject.put("sensor_data", sensorDataObj);
-
+			sensorDataObj.put("timestamp", Setting.timestampFormat.format(timeStamp));
+			jsonObject.put("AmbientLight",sensorDataObj);
 			return jsonObject.toString();
 
 		} catch (JSONException e) {

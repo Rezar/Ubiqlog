@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author: Soheil KHOSRAVIPOUR -->
+<!-- Date: 07.2010 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+	<TextView android:id="@+id/sensorInfo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:text="@string/sensor_info"
+		android:textColor="#000"/>
+		
+	<TextView android:id="@+id/sensorDisplay"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/sensorInfo"
+		android:textColor="#000"/>
+		
+    <Button android:id="@+id/pickSensor"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+	    android:text="@string/sensors_button"
+		android:layout_below="@+id/sensorDisplay"
+	    />
+	    
+    <TextView android:id="@+id/dateDisplayInfo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From:"
+		android:layout_below="@+id/pickSensor"
+		android:textColor="#000"
+		/>
+			    
+    <TextView android:id="@+id/dateDisplay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+		android:layout_below="@+id/dateDisplayInfo1"
+		android:textColor="#000"
+		/>
+		       
+    <Button android:id="@+id/pickDate1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Change the date"
+		android:layout_below="@+id/dateDisplay1"
+        />
+    
+	<TextView android:id="@+id/dateDisplayInfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To:"
+		android:layout_below="@+id/pickDate1"
+		android:textColor="#000"
+		/>		
+		 
+	<TextView android:id="@+id/dateDisplay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dateDisplayInfo2"
+        android:textColor="#000"
+	    />
+        
+    <Button android:id="@+id/pickDate2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Change the date"
+		android:layout_below="@+id/dateDisplay2"
+		/>
+    <TextView
+        android:id="@+id/searchLable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Keyword:"
+		android:layout_below="@+id/pickDate2"
+		android:textColor="#000"
+      	/>  
+    <EditText
+        android:id="@+id/pickKeyword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+		android:layout_below="@+id/searchLable"		
+		android:singleLine="true"
+		android:lines="1"
+         />
+     <TextView
+     	android:id="@+id/searching"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25sp"
+		android:layout_above="@+id/button_bar"
+		android:textColor="#000"
+		/>
+         
+		<LinearLayout
+		android:id="@+id/button_bar"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:orientation="horizontal" >
+
+			    <Button
+			        android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+			        android:id="@+id/searchButton"
+			        android:text="Search" 
+			        android:layout_weight="1"
+			   		/>
+			   <Button
+			       android:layout_width="fill_parent"
+		    		android:layout_height="wrap_content"
+			        android:id="@+id/cancelButton"
+			        android:text="Cancel" 
+			        android:layout_weight="1"
+			   		/>
+		</LinearLayout>
+</RelativeLayout>

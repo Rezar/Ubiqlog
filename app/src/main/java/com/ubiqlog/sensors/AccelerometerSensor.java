@@ -1,7 +1,6 @@
 package com.ubiqlog.sensors;
 
 import android.app.Service;
-import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -9,7 +8,6 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-import android.os.BatteryManager;
 import android.os.IBinder;
 import android.util.Log;
 
@@ -35,11 +33,17 @@ public class AccelerometerSensor extends Service implements SensorEventListener 
     private Sensor senAccelerometer;
 
     private long lastUpdate;
+    private String collecter="";
+    private String delimiter=",";
+    //count the recorder every 30(just a minute  data)
+    private int count=0;
+
+
 
 
     @Override
     public void onCreate() {
-        Log.d("Accelerometer-Logging", "--- onCreate");
+        Log.e("Accelerometer-Logging", "--- onCreate");
         super.onCreate();
         /*
         mIntentFilter = new IntentFilter();
@@ -58,7 +62,7 @@ public class AccelerometerSensor extends Service implements SensorEventListener 
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        Log.d("Accelerometer-Logging", "--- onStartCommand");
+        Log.e("Accelerometer-Logging", "--- onStartCommand");
         /*
         if (intent != null) {
             this.registerReceiver(accelerometerReceiver, mIntentFilter);
@@ -73,7 +77,7 @@ public class AccelerometerSensor extends Service implements SensorEventListener 
     public void onDestroy() {
         super.onDestroy();
         mDataBuffer.flush(true);
-        Log.d("Accelerometer-Logging", "--- onDestroy");
+        Log.e("Accelerometer-Logging", "--- onDestroy");
         // Unregister accelerometer sensor
         senSensorManager.unregisterListener(this);
         senSensorManager = null;
@@ -82,23 +86,39 @@ public class AccelerometerSensor extends Service implements SensorEventListener 
 
     @Override
     public void onSensorChanged(SensorEvent event) {
+
+
         Sensor mySensor = event.sensor;
 
         if (mySensor.getType() == Sensor.TYPE_ACCELEROMETER) {
             float x = event.values[0];
-            float y = event.values[1];
+            //float y = event.values[1];
             //float z = event.values[2];
-
             long curTime = System.currentTimeMillis();
             long diffTime = (curTime - lastUpdate);
             if (diffTime > Setting.ACCELEROMETER_SAVE_DELAY) {
                 lastUpdate = curTime;
 
+                //write into file every minute
+                if(count==29)
+                {
+                    collecter = collecter+Float.toString(x);
+                    String encoded = JsonEncodeDecode.EncodeAccelerometerIn_X(Setting.ACCELEROMETER_SAVE_DELAY, collecter, new Date());
+                    mDataBuffer.insert(encoded, true, Setting.bufferMaxSize);
+                    Log.e("Accelerometer-encoded", encoded);
+                    count=0;
+                    collecter="";
+                }
+                else if(count<29)
+                {
+                    collecter = collecter+Float.toString(x)+delimiter;
+                    count++;
+                }
                 // Save x and y axis changes
-                String encoded = JsonEncodeDecode.EncodeAccelerometer(x, y, new Date());
-                //Log.d("Accelerometer-encoded", encoded);
-                mDataBuffer.insert(encoded, true, Setting.bufferMaxSize);
+                // String encoded = JsonEncodeDecode.EncodeAccelerometer(x, y, new Date());
+                //Log.e("Accelerometer-encoded", encoded);
             }
+
         }
     }
 

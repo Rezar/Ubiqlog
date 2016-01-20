@@ -1,7 +1,7 @@
 package com.ubiqlog.sensors;
 
 /**
- * Created by Aaron on 12/16/2015.
+ * Created by Ping_He on 2016/1/19.
  */
 
 import android.app.ActivityManager;
@@ -20,12 +20,6 @@ import android.util.Pair;
 import com.ubiqlog.common.Setting;
 import com.ubiqlog.core.DataAcquisitor;
 import com.ubiqlog.utils.JsonEncodeDecode;
-
-import java.util.Calendar;
-//import com.insight.insight.common.Setting;
-//import com.insight.insight.data.DataAcquisitor;
-//import com.insight.insight.data.JSONUtil;
-//import com.insight.insight.data.SemanticTempCSVUtil;
 
 import java.util.Calendar;
 
@@ -64,7 +58,7 @@ public class InteractionSensor extends Service {
     public void onCreate() {
         super.onCreate();
 
-        Log.d("Interaction-Logging", "--- onCreate");
+        Log.e("Interaction-Logging", "--- onCreate");
         // Added by AP
         //Log.d(TAG, "Starting App usage sensor");
         pm = null;
@@ -78,7 +72,7 @@ public class InteractionSensor extends Service {
         mHandler.post(mRunnable);
 
         nextActivePair = null;
-        mDataBuffer = new DataAcquisitor(Setting.LOG_FOLDER, Setting.dataFileName_ScreenUsage);
+        mDataBuffer = new DataAcquisitor(Setting.DEFAULT_FOLDER, Setting.dataFileName_ScreenUsage);
         //mSA_AppUsage = new DataAcquisitor("SA/" + Setting.dataFolderName_ScreenUsage);
 
         IntentFilter filter = new IntentFilter(Intent.ACTION_SCREEN_ON);
@@ -93,7 +87,7 @@ public class InteractionSensor extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        Log.d("Interaction-Logging", "--- onStartCommand");
+        Log.e("Interaction-Logging", "--- onStartCommand");
         //mHandler.post(mRunnable);
         if (wl == null && pm == null && ServiceIntent == null) {
             start();
@@ -229,9 +223,10 @@ public class InteractionSensor extends Service {
                 //store in buff / write  file
                 String encoded = JsonEncodeDecode.EncodeScreenUsage(Integer.toString(startHour), Integer.toString(endHour),
                         startTime.getTime(), endTime.getTime(), Tminutes, MinutesInStartHour, MinutesInEndHour);
-                //mDataBuffer.insert(encoded, true, Setting.bufferMaxSize);
-                DataAcquisitor.dataBuff.add(encoded);
 
+                // mDataBuffer.insert(encoded, true, Setting.bufferMaxSize);
+                DataAcquisitor.dataBuff.add(encoded);
+                Log.e("Screen_Interaction",encoded);
                 /*
                 String encoded_SA = SemanticTempCSVUtil.encodedScreenUsage(Integer.toString(startHour),Integer.toString(endHour),
                         startTime.getTime(), endTime.getTime(), Tminutes, MinutesInStartHour, MinutesInEndHour);

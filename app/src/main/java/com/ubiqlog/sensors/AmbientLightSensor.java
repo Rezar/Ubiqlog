@@ -47,7 +47,7 @@ public class AmbientLightSensor extends Service  implements SensorEventListener 
         Log.d("AmbientLight-Logging", "--- onCreate");
         count = 0;
         totalSum = 0f;
-        mDataBuffer = new DataAcquisitor(Setting.LOG_FOLDER, Setting.dataFileName_AmbientLightSensor);
+        mDataBuffer = new DataAcquisitor(Setting.DEFAULT_FOLDER, Setting.dataFileName_AmbientLightSensor);
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         mLight = mSensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
         lastVal_timestamp = 0;
@@ -99,7 +99,8 @@ public class AmbientLightSensor extends Service  implements SensorEventListener 
                 String encoded = JsonEncodeDecode.EncodeAmbientLight(avg, date);
                 //Log.d(getClass().getSimpleName(), encoded);
                 //add encoded string to buffer
-                mDataBuffer.insert(encoded, true, Setting.bufferMaxSize); // 1 for BufferMaxSize causes to flush Buffer automatically after inserting value
+                //mDataBuffer.insert(encoded, true, Setting.bufferMaxSize); // 1 for BufferMaxSize causes to flush Buffer automatically after inserting value
+                Log.e("AmbientLight",encoded);
                 DataAcquisitor.dataBuff.add(encoded);
 
                 totalSum = 0;
