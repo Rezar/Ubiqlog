@@ -13,12 +13,6 @@ import com.ubiqlog.common.Setting;
 import com.ubiqlog.core.DataAcquisitor;
 import com.ubiqlog.utils.JsonEncodeDecode;
 
-import org.apache.commons.codec.binary.Base64;
-
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.nio.charset.Charset;
 import java.util.Date;
 
 public class RawAudioSensor extends Service {
@@ -44,7 +38,7 @@ public class RawAudioSensor extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-        Log.d("RawAudio-Logging", "--- onCreate");
+        Log.e("RawAudio-Logging", "--- onCreate");
         bufferSize = AudioRecord.getMinBufferSize(RECORDER_SAMPLERATE,
                 RECORDER_CHANNELS, RECORDER_AUDIO_ENCODING);
 
