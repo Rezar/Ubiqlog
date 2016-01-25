@@ -2,8 +2,9 @@ package com.ubiqlog.ui;
 
 
 import android.content.Context;
-import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -18,7 +19,8 @@ public class ToolsUI extends FrameLayout {
 
 	Context ctx = this.getContext();
 	ListView lv = null;
-	
+    MainUI mainui = new MainUI();
+
 	public ToolsUI(Context context) {
 		super(context);
 		ctx = context;
@@ -32,26 +34,40 @@ public class ToolsUI extends FrameLayout {
 
 	private static final int SEARCH = 0;
 	private static final int VISUALIZATION = 1;
+	private static final int SMS= 2;
 
-	public static final String[] TOOLS_MAINUI_LIST = { "Search","Visualization" };
+	public static final String[] TOOLS_MAINUI_LIST = { "Search","Visualization","Check Permission of SMS" };
 	ListView.OnItemClickListener onListItemClick =  new ListView.OnItemClickListener() {
 
 		
 		//@Override
 		public void onItemClick(AdapterView<?> l, View v, int position, long id) {
 			switch (position) {
-			case SEARCH:
-//				SearchMainUI sMain = new SearchMainUI(ctx, closed);
-//				removeAllViews();
-//				addView(sMain);
-				Toast.makeText(ctx, "This item has been disabled for this version", Toast.LENGTH_SHORT).show();
-				break;
-			case VISUALIZATION:
-//				VisMain visMain = new VisMain(ctx, visClosed);
-//				removeAllViews();
-//				addView(visMain);
-				Toast.makeText(ctx, "This item has been disabled for this version", Toast.LENGTH_SHORT).show();
-				break;
+                case SEARCH:
+    //				SearchMainUI sMain = new SearchMainUI(ctx, closed);
+    //				removeAllViews();
+    //				addView(sMain);
+                    Toast.makeText(ctx, "This item has been disabled for this version", Toast.LENGTH_SHORT).show();
+                    break;
+                case VISUALIZATION:
+    //				VisMain visMain = new VisMain(ctx, visClosed);
+    //				removeAllViews();
+    //				addView(visMain);
+                    Toast.makeText(ctx, "This item has been disabled for this version", Toast.LENGTH_SHORT).show();
+                    break;
+                case SMS:
+                    if (ContextCompat.checkSelfPermission(ctx,
+                            "android.permission.READ_SMS")
+                            != PackageManager.PERMISSION_GRANTED)
+                    {
+
+                        Toast.makeText(ctx, "Read SMS not granted", Toast.LENGTH_SHORT).show();
+                    }
+                    else
+                    {
+
+                        Toast.makeText(ctx, "Read SMS granted", Toast.LENGTH_SHORT).show();
+                    }
 			}
 			
 		}

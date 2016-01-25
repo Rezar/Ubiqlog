@@ -1,16 +1,6 @@
 package com.ubiqlog.ui;
 
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Properties;
-
-import com.ubiqlog.common.Setting;
-import com.ubiqlog.core.*;
-import com.ubiqlog.sensors.*;
-import com.ubiqlog.ui.R;
-
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningServiceInfo;
@@ -18,6 +8,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -40,6 +31,28 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
+import com.ubiqlog.common.Setting;
+import com.ubiqlog.core.Engine;
+import com.ubiqlog.core.SensorCatalouge;
+import com.ubiqlog.sensors.AccelerometerSensor;
+import com.ubiqlog.sensors.ApplicationSensor;
+import com.ubiqlog.sensors.AudioSensor;
+import com.ubiqlog.sensors.BatterySensor;
+import com.ubiqlog.sensors.BluetoothSensor;
+import com.ubiqlog.sensors.CallSensor;
+import com.ubiqlog.sensors.HardwareSensor_OLD;
+import com.ubiqlog.sensors.InteractionSensor;
+import com.ubiqlog.sensors.LocationSensor;
+import com.ubiqlog.sensors.PictureSensor;
+import com.ubiqlog.sensors.SMSSensor;
+import com.ubiqlog.sensors.SensorObj;
+import com.ubiqlog.sensors.WiFiSensor;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Properties;
+
 
 public class MainUI extends Activity {
 
@@ -51,6 +64,7 @@ public class MainUI extends Activity {
 	TextView tv_sensors = null;
 	TextView tv_tools = null;
 	ToggleButton status_btn = null;
+
 
 	private static final int MENU_HOME = 1;
 	private static final int MENU_SETTINGS = 2;
@@ -293,8 +307,25 @@ public class MainUI extends Activity {
 		public void onClick(View v) {
 			if (((ToggleButton) v).isChecked()) {
 				Log.e("MainUI", "----Start Logging Sensors");
-				startAllService();
-				tv_status.setText("UbiqLog is running now.");
+				requestPermissions(new String[]{"android.permission.READ_SMS",
+                                                "android.permission.READ_CALL_LOG",
+                                                "android.permission.READ_CONTACTS",
+                                                "android.permission.READ_PHONE_STATE",
+                                                "android.permission.RECORD_AUDIO",
+                                                "android.permission.WRITE_EXTERNAL_STORAGE",
+                                                "android.permission.INTERNET",
+                                                "android.permission.LOCATION",
+                                                "android.permission.ACCESS_FINE_LOCATION",
+                                                "android.permission.ACCESS_COARSE_LOCATION",
+                                                "android.permission.BLUETOOTH",
+                                                "android.permission.BLUETOOTH_ADMIN","android.permission.CAMERA",
+                                                "android.permission.ACCESS_NETWORK_STATE",
+                                                "android.permission.GET_TASKS",
+                                                "android.permission.ACCESS_WIFI_STATE",
+                                                "android.permission.CHANGE_WIFI_STATE",
+                                                "com.google.android.gms.permission.ACTIVITY_RECOGNITION",
+                                                "android.permission.RECEIVE_BOOT_COMPLETED",
+                                                "android.permission.READ_EXTERNAL_STORAGE"},0);
 			} else {
 				Log.e("MainUI", "----Stop Logging Sensors");
 				stopAllService();
@@ -446,4 +477,33 @@ public class MainUI extends Activity {
 		ResetStates();
 		tv_sensors.setSelected(true);
 	}
+	@Override
+	public void onRequestPermissionsResult(int requestCode,
+										   String permissions[], int[] grantResults) {
+		switch (requestCode) {
+			case 0: {
+				// If request is cancelled, the result arrays are empty.
+				if (grantResults.length > 0
+						&& grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
+                    startAllService();
+                    tv_status.setText("UbiqLog is running now.");
+					// permission was granted, yay! Do the
+					// contacts-related task you need to do.
+					Log.e("grant", "user granted the permission!");
+
+				} else {
+
+					// permission denied, boo! Disable the
+					// functionality that depends on this permission.
+					Log.e("grant", "user denied the permission!");
+				}
+				return;
+			}
+
+			// other 'case' lines to check for other
+			// permissions this app might request
+		}
+	}
+
 }
