@@ -4,24 +4,24 @@
         "source": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\src\\main\\res\\drawable-ldpi\\sms_in_yes_s1.png"
     },
     {
-        "merged": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\btn_background_pressed.png",
-        "source": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\src\\main\\res\\drawable-ldpi\\btn_background_pressed.png"
-    },
-    {
         "merged": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\call_in_no_s1.png",
         "source": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\src\\main\\res\\drawable-ldpi\\call_in_no_s1.png"
+    },
+    {
+        "merged": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\btn_background_pressed.png",
+        "source": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\src\\main\\res\\drawable-ldpi\\btn_background_pressed.png"
     },
     {
         "merged": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\bluepoint.png",
         "source": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\src\\main\\res\\drawable-ldpi\\bluepoint.png"
     },
     {
-        "merged": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\call_out_yes_s1.png",
-        "source": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\src\\main\\res\\drawable-ldpi\\call_out_yes_s1.png"
-    },
-    {
         "merged": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\call_in_yes_s1.png",
         "source": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\src\\main\\res\\drawable-ldpi\\call_in_yes_s1.png"
+    },
+    {
+        "merged": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\call_out_yes_s1.png",
+        "source": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\src\\main\\res\\drawable-ldpi\\call_out_yes_s1.png"
     },
     {
         "merged": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\btn_background_selected.png",

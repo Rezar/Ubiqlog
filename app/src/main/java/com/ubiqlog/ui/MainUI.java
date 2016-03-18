@@ -12,6 +12,7 @@ import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
@@ -305,34 +306,50 @@ public class MainUI extends Activity {
 	private View.OnClickListener btnStartStopListener = new View.OnClickListener() {
 		
 		public void onClick(View v) {
-			if (((ToggleButton) v).isChecked()) {
-				Log.e("MainUI", "----Start Logging Sensors");
-				requestPermissions(new String[]{"android.permission.READ_SMS",
-                                                "android.permission.READ_CALL_LOG",
-                                                "android.permission.READ_CONTACTS",
-                                                "android.permission.READ_PHONE_STATE",
-                                                "android.permission.RECORD_AUDIO",
-                                                "android.permission.WRITE_EXTERNAL_STORAGE",
-                                                "android.permission.INTERNET",
-                                                "android.permission.LOCATION",
-                                                "android.permission.ACCESS_FINE_LOCATION",
-                                                "android.permission.ACCESS_COARSE_LOCATION",
-                                                "android.permission.BLUETOOTH",
-                                                "android.permission.BLUETOOTH_ADMIN","android.permission.CAMERA",
-                                                "android.permission.ACCESS_NETWORK_STATE",
-                                                "android.permission.GET_TASKS",
-                                                "android.permission.ACCESS_WIFI_STATE",
-                                                "android.permission.CHANGE_WIFI_STATE",
-                                                "com.google.android.gms.permission.ACTIVITY_RECOGNITION",
-                                                "android.permission.RECEIVE_BOOT_COMPLETED",
-                                                "android.permission.READ_EXTERNAL_STORAGE"},0);
-			} else {
-				Log.e("MainUI", "----Stop Logging Sensors");
-				stopAllService();
-				tv_status.setText("UbiqLog is not running now.");
+			if(Build.VERSION.SDK_INT >= 23)
+			{
+				if (((ToggleButton) v).isChecked()) {
+					Log.e("MainUI", "----Start Logging Sensors");
+					requestPermissions(new String[]{"android.permission.READ_SMS",
+							"android.permission.READ_CALL_LOG",
+							"android.permission.READ_CONTACTS",
+							"android.permission.READ_PHONE_STATE",
+							"android.permission.RECORD_AUDIO",
+							"android.permission.WRITE_EXTERNAL_STORAGE",
+							"android.permission.INTERNET",
+							"android.permission.LOCATION",
+							"android.permission.ACCESS_FINE_LOCATION",
+							"android.permission.ACCESS_COARSE_LOCATION",
+							"android.permission.BLUETOOTH",
+							"android.permission.BLUETOOTH_ADMIN","android.permission.CAMERA",
+							"android.permission.ACCESS_NETWORK_STATE",
+							"android.permission.GET_TASKS",
+							"android.permission.ACCESS_WIFI_STATE",
+							"android.permission.CHANGE_WIFI_STATE",
+							"com.google.android.gms.permission.ACTIVITY_RECOGNITION",
+							"android.permission.RECEIVE_BOOT_COMPLETED",
+							"android.permission.READ_EXTERNAL_STORAGE"},0);
+				} else {
+					Log.e("MainUI", "----Stop Logging Sensors");
+					stopAllService();
+					tv_status.setText("UbiqLog is not running now.");
+				}
+
+				((ToggleButton) v).setChecked(isUbiqlogRunning());
+			}else{
+				if (((ToggleButton) v).isChecked()) {
+					Log.e("MainUI", "----Start Logging Sensors");
+					startAllService();
+					tv_status.setText("UbiqLog is running now.");
+				} else {
+					Log.e("MainUI", "----Stop Logging Sensors");
+					stopAllService();
+					tv_status.setText("UbiqLog is not running now.");
+				}
+
+				((ToggleButton) v).setChecked(isUbiqlogRunning());
 			}
 
-			((ToggleButton) v).setChecked(isUbiqlogRunning());
 		}
 	};
 
