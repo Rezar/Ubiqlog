@@ -49,12 +49,12 @@ public class AudioSensor extends Service implements SensorConnector {
 
 	@Override
 	public void onStart(Intent intent, int startId) {
-		Log.d("[AudioSensor-Logging]", "--- onStart");
+		Log.e("[AudioSensor-Logging]", "--- onStart");
 		readSensor();
 	}
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
-		Log.d("[AudioSensor-Logging]", "--- onStartCommand");
+		Log.e("[AudioSensor-Logging]", "--- onStartCommand");
 		readSensor();
 		return START_STICKY;
 	}

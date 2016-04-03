@@ -91,6 +91,7 @@ public class BatterySensor extends Service {
                 boolean isCharging = (status == BatteryManager.BATTERY_STATUS_CHARGING) ||
                         (status == BatteryManager.BATTERY_STATUS_FULL);
 
+                SleepSensor.setisCharge(isCharging);
 
                 if (level % 5 == 0) {
                     //store in buff

@@ -220,6 +220,24 @@
             android:name="com.ubiqlog.sensors.AmbientLightSensor"
             android:enabled="true"
             android:exported="true"></service>
+
+        <service
+            android:name="com.ubiqlog.sensors.SleepSensor"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <service
+            android:label="application_accessibility_service"
+            android:name="com.ubiqlog.sensors.ApplicationAccessibilityService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibilityservice"/>
+        </service>
+
     </application>
 
 </manifest>

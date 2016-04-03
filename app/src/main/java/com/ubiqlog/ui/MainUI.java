@@ -47,6 +47,7 @@ import com.ubiqlog.sensors.LocationSensor;
 import com.ubiqlog.sensors.PictureSensor;
 import com.ubiqlog.sensors.SMSSensor;
 import com.ubiqlog.sensors.SensorObj;
+import com.ubiqlog.sensors.SleepSensor;
 import com.ubiqlog.sensors.WiFiSensor;
 
 import java.io.FileNotFoundException;
@@ -356,7 +357,9 @@ public class MainUI extends Activity {
 	private void stopAllService() {
 		
 		Engine.stopRecording(getApplicationContext(), this.getApplication());
-		
+		Intent stopSleep = new Intent(this, SleepSensor.class);
+		stopService(stopSleep);
+
 		Intent notiI = new Intent();
 		notiI.setClass(getApplication(), UbiqlogStatusBar.class);
 		stopService(notiI);

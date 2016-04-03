@@ -23,6 +23,8 @@ public class RawAudioSensor extends Service {
     private AudioRecord recorder = null;
     private Thread recordingThread = null;
     private boolean isRecording = false;
+    private int count =0;
+    private int total=0;
 
     int BufferElements2Rec = 1024; // want to play 2048 (2K) since 2 bytes we use only 1024
     int BytesPerElement = 2; // 2 bytes in 16bit format
@@ -109,6 +111,21 @@ public class RawAudioSensor extends Service {
         if (recorder != null) {
             short sData[] = new short[bufferSize];
             recorder.read(sData, 0, bufferSize);
+            StringBuffer sb = new StringBuffer();
+
+            for(int i=0;i<sData.length;i++)
+            {
+                total = total+Math.abs(sData[i]);
+                count++;
+            }
+
+            if(count>=43008){
+                SleepSensor.setAudioArray(total/count);
+                count=0;
+                total=0;
+            }
+            //SleepSensor.setAudioArray(total/sData.length);
+            //Log.e("RAWAUDIO", ""+sData.length);
 
             // Convert short array into byte array
             byte [] bData = short2byte(sData);

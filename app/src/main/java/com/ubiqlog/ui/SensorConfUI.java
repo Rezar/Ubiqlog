@@ -1,21 +1,29 @@
 package com.ubiqlog.ui;
 
-import com.ubiqlog.common.Setting;
-import com.ubiqlog.core.SensorCatalouge;
-import com.ubiqlog.ui.extras.controls.IntervalSelector;
-
+import android.accessibilityservice.AccessibilityServiceInfo;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
+import android.provider.Settings;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.accessibility.AccessibilityEvent;
+import android.view.accessibility.AccessibilityManager;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.ubiqlog.common.Setting;
+import com.ubiqlog.core.SensorCatalouge;
+import com.ubiqlog.ui.extras.controls.IntervalSelector;
+
+import java.util.List;
 
 public class SensorConfUI extends FrameLayout 
 {
@@ -37,7 +45,14 @@ public class SensorConfUI extends FrameLayout
 		ctx = context;
 		_sensorName = sensorName;
 		_closed = closed;
-		this.addView(initUI(extras));
+
+		if(sensorName.equals("APPLICATION")&&(!isAccessibilityEnabled(getContext())))
+		{
+			this.addView(initUIApplication(extras));
+		}else{
+			this.addView(initUI(extras));
+		}
+
 	}
 	
 	private LinearLayout initUI(String[] confdata) 
@@ -107,6 +122,95 @@ public class SensorConfUI extends FrameLayout
 		tableLayoutButtons.setStretchAllColumns(true);
 		TableRow.LayoutParams rowLayoutSingle = 
 			new TableRow.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.FILL_PARENT);
+		TableRow tableRow = new TableRow(ctx);
+		tableRow.addView(btnSave, rowLayoutSingle);
+		tableRow.addView(btnCancel, rowLayoutSingle);
+		tableLayoutButtons.addView(tableRow, rowLayoutSingle);
+
+		LinearLayout finalLay = new LinearLayout(ctx);
+		finalLay.setOrientation(LinearLayout.VERTICAL);
+		finalLay.addView(recordLay);
+		finalLay.addView(tableLayoutButtons);
+		finalLay.setPadding(10, 10, 10, 10);
+		return finalLay;
+	}
+
+	private LinearLayout initUIApplication(String[] confdata)
+	{
+
+		TableLayout.LayoutParams tbllayParams = new TableLayout.LayoutParams(
+				ViewGroup.LayoutParams.FILL_PARENT,
+				ViewGroup.LayoutParams.FILL_PARENT);
+		recordLay = new TableLayout(ctx);
+		recordLay.setStretchAllColumns(true);
+
+		for (int i = 0; i < confdata.length; i++)
+		{
+			data = confdata[i].split("=");
+			// first item is enable or disable
+			data[1] = data[1].trim();
+			if (data[1].equalsIgnoreCase("yes")
+					|| data[1].equalsIgnoreCase("no"))
+			{
+				CheckBox chkvalue = new CheckBox(ctx);
+				chkvalue.setTextColor(Color.BLACK);
+				chkvalue.setText(data[0]);
+
+
+				chkvalue.setChecked(false);
+				chkvalue.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+					@Override
+					public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+						if(isChecked==true)
+						{
+							getContext().startActivity(new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS));
+							Toast.makeText(getContext(), "Please open the service application accessibility service!", Toast.LENGTH_LONG).show();
+						}
+					}
+				});
+
+				TableRow tr = new TableRow(ctx);
+				tr.addView(chkvalue);
+				recordLay.addView(tr, tbllayParams);
+
+			}
+			else
+			{
+				TextView txtName = new TextView(ctx);
+				txtName.setText(data[0]); //+":"
+				txtName.setTextColor(Color.BLACK);
+				int val = 0;
+				try{
+					val = Integer.parseInt(data[1]);
+				}catch(NumberFormatException f){}
+				IntervalSelector sel = new IntervalSelector(ctx,val);
+				//EditText edtValue = new EditText(ctx);
+				//edtValue.setText(data[1]);
+				//edtValue.setSingleLine(true);
+
+				TableRow tr2 = new TableRow(ctx);
+				tr2.addView(txtName);
+				recordLay.addView(tr2, tbllayParams);
+
+				TableRow tr3 = new TableRow(ctx);
+				tr3.addView(sel);
+				recordLay.addView(tr3, tbllayParams);
+			}
+		}
+
+		Button btnSave = new Button(ctx);
+		btnSave.setText("Save");
+		btnSave.setOnClickListener(btnSaveListener);
+
+		Button btnCancel = new Button(ctx);
+		btnCancel.setText("Cancel");
+		btnCancel.setOnClickListener(btnCancelListener);
+
+		TableLayout tableLayoutButtons = new TableLayout(ctx);
+		tableLayoutButtons.setBaselineAligned(true);
+		tableLayoutButtons.setStretchAllColumns(true);
+		TableRow.LayoutParams rowLayoutSingle =
+				new TableRow.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.FILL_PARENT);
 		TableRow tableRow = new TableRow(ctx);
 		tableRow.addView(btnSave, rowLayoutSingle);
 		tableRow.addView(btnCancel, rowLayoutSingle);
@@ -196,6 +300,22 @@ public class SensorConfUI extends FrameLayout
 	
 	private void finish() {
 		_closed.onClosed();
+	}
+
+	public static boolean isAccessibilityEnabled(Context context) {
+		String id ="com.ubiqlog.sensors/.ApplicationAccessibilityService";
+		AccessibilityManager am = (AccessibilityManager) context
+				.getSystemService(Context.ACCESSIBILITY_SERVICE);
+
+		List<AccessibilityServiceInfo> runningServices = am
+				.getEnabledAccessibilityServiceList(AccessibilityEvent.TYPES_ALL_MASK);
+		for (AccessibilityServiceInfo service : runningServices) {
+			if (id.equals(service.getId())) {
+				return true;
+			}
+		}
+
+		return false;
 	}
 
 }

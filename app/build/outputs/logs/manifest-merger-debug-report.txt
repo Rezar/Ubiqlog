@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml:2:1-225:12
+ADDED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml:2:1-243:12
 	package
 		ADDED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml:3:5-29
 		INJECTED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml
@@ -308,7 +308,7 @@ ADDED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml:53:5-55
 	android:name
 		ADDED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml:54:9-51
 application
-ADDED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml:57:5-223:19
+ADDED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml:57:5-241:19
 MERGED from [com.android.support:appcompat-v7:23.1.1] C:\Users\ibm\Desktop\Ubiqlog\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.1] C:\Users\ibm\Desktop\Ubiqlog\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services:8.3.0] C:\Users\ibm\Desktop\Ubiqlog\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\8.3.0\AndroidManifest.xml:19:5-20
@@ -751,6 +751,34 @@ ADDED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml:219:9-2
 		ADDED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml:222:13-36
 	android:name
 		ADDED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml:220:13-66
+service#com.ubiqlog.sensors.SleepSensor
+ADDED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml:224:9-227:47
+	android:enabled
+		ADDED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml:226:13-35
+	android:exported
+		ADDED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml:227:13-36
+	android:name
+		ADDED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml:225:13-59
+service#com.ubiqlog.sensors.ApplicationAccessibilityService
+ADDED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml:229:9-239:19
+	android:label
+		ADDED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml:230:13-62
+	android:permission
+		ADDED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml:232:13-79
+	android:name
+		ADDED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml:231:13-79
+intent-filter#android.accessibilityservice.AccessibilityService
+ADDED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml:233:13-235:29
+action#android.accessibilityservice.AccessibilityService
+ADDED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml:234:17-91
+	android:name
+		ADDED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml:234:25-89
+meta-data#android.accessibilityservice
+ADDED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml:236:13-238:63
+	android:resource
+		ADDED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml:238:17-61
+	android:name
+		ADDED from C:\Users\ibm\Desktop\Ubiqlog\app\src\main\AndroidManifest.xml:237:17-60
 activity#com.google.android.gms.ads.AdActivity
 ADDED from [com.google.android.gms:play-services-ads:8.3.0] C:\Users\ibm\Desktop\Ubiqlog\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.3.0\AndroidManifest.xml:26:9-29:64
 	android:configChanges

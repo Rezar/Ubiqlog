@@ -470,5 +470,34 @@ public class JsonEncodeDecode {
 		return null;
 	}
 
+	public static String EncodeSleep(Date timeStamp1, Date timeStamp2) {
+		JSONObject jsonObject = new JSONObject();
+		JSONObject sensorDataObj = new JSONObject();
+		try {
+			sensorDataObj.put("starttimestamp", Setting.timestampFormat.format(timeStamp1));
+			sensorDataObj.put("endtimestamp", Setting.timestampFormat.format(timeStamp2));
+			jsonObject.put("SleepSensor",sensorDataObj);
+			return jsonObject.toString();
+
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	public static String EncodeApplication(String appname, Date timeStamp) {
+		JSONObject jsonObject = new JSONObject();
+		JSONObject sensorDataObj = new JSONObject();
+		try {
+			sensorDataObj.put("appname", appname);
+			sensorDataObj.put("timestamp", Setting.timestampFormat.format(timeStamp));
+			jsonObject.put("ApplicationSensor",sensorDataObj);
+			return jsonObject.toString();
+
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
 }
 

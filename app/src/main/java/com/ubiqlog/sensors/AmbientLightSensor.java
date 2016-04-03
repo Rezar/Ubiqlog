@@ -96,6 +96,7 @@ public class AmbientLightSensor extends Service  implements SensorEventListener 
                 float avg = totalSum / count;
 
                 //Encode the lux value and date
+                SleepSensor.setAmbientData(avg);
                 String encoded = JsonEncodeDecode.EncodeAmbientLight(avg, date);
                 //Log.d(getClass().getSimpleName(), encoded);
                 //add encoded string to buffer

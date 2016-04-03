@@ -98,7 +98,7 @@ public class AccelerometerSensor extends Service implements SensorEventListener 
             long diffTime = (curTime - lastUpdate);
             if (diffTime > Setting.ACCELEROMETER_SAVE_DELAY) {
                 lastUpdate = curTime;
-
+                SleepSensor.setAccArray(x);
                 //write into file every minute
                 if(count==29)
                 {

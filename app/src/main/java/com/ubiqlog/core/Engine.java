@@ -1,10 +1,5 @@
 package com.ubiqlog.core;
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
-
 import android.app.Application;
 import android.app.Service;
 import android.content.BroadcastReceiver;
@@ -19,14 +14,13 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.ubiqlog.common.Setting;
 import com.ubiqlog.sensors.AccelerometerSensor;
+import com.ubiqlog.sensors.ActivitySensor;
 import com.ubiqlog.sensors.AmbientLightSensor;
 import com.ubiqlog.sensors.ApplicationSensor;
 import com.ubiqlog.sensors.AudioSensor;
 import com.ubiqlog.sensors.BatterySensor;
 import com.ubiqlog.sensors.BluetoothSensor;
-//import com.ubiqlog.sensors.BluetoothSensor_NOTIMER;
 import com.ubiqlog.sensors.CallSensor;
-import com.ubiqlog.sensors.ActivitySensor;
 import com.ubiqlog.sensors.InteractionSensor;
 import com.ubiqlog.sensors.LocationGSSensor;
 import com.ubiqlog.sensors.LocationSensor;
@@ -34,10 +28,18 @@ import com.ubiqlog.sensors.PictureSensor;
 import com.ubiqlog.sensors.RawAudioSensor;
 import com.ubiqlog.sensors.SMSSensor;
 import com.ubiqlog.sensors.SensorObj;
+import com.ubiqlog.sensors.SleepSensor;
 import com.ubiqlog.sensors.WiFiSensor;
 import com.ubiqlog.ui.UbiqlogStatusBar;
 import com.ubiqlog.utils.FeatureCheck;
 import com.ubiqlog.utils.IOManager;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+
+//import com.ubiqlog.sensors.BluetoothSensor_NOTIMER;
 
 public class Engine extends Service {
 	
@@ -108,6 +110,7 @@ public class Engine extends Service {
 
 		SensorCatalouge senCat = new SensorCatalouge(ctx);
 		ArrayList<SensorObj> allsens = senCat.getAllSensors();
+
 		// class names of enabled sensors and annotation classnames
 		HashSet<SensorObj> sensors = new HashSet<SensorObj>(); 
 		
@@ -137,6 +140,7 @@ public class Engine extends Service {
 		Iterator<SensorObj> itr = sensors.iterator();
 		while (itr.hasNext()) {
 			SensorObj cs = itr.next();
+			//Log.e("Check",""+cs.getSensorName());
 			try {
 				if (cs.getSensorName().equalsIgnoreCase("ACTIVITY")){
 					int resp = GooglePlayServicesUtil.isGooglePlayServicesAvailable(ctx);
@@ -169,6 +173,10 @@ public class Engine extends Service {
 					i.setClassName(app, cs.getClassName()) ;
 					ctx.startService(i);
 				}
+
+
+
+
 
 			} catch (Exception e) {
 				IOManager ioerror = new IOManager();

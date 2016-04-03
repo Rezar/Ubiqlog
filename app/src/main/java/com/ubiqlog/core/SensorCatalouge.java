@@ -39,6 +39,8 @@ public class SensorCatalouge {
 	public void addSensor(String sensorname, String classname,String configdata, String annotation) {
 		db = con.openOrCreateDatabase(Setting.Instance(null).getDatabaseName(),Context.MODE_WORLD_WRITEABLE, null);
 		ContentValues initialValues = new ContentValues();
+
+
 		initialValues.put("sensorname", sensorname);
 		initialValues.put("classname", classname.toString());
 		initialValues.put("configdata", configdata);
@@ -99,9 +101,26 @@ public class SensorCatalouge {
 				sensor.setClassName(c.getString(1));
 				sensor.setConfigData(c.getString(2).split(","));
 				sensor.setAnnotationCalss(c.getString(3));
+				//Log.e("GETALLSENSOR", c.getString(0)+"%%%"+c.getString(1)+"%%%"+c.getString(2).split(",")+"%%%"+c.getString(3));
 				allSensors.add(sensor);
 				c.moveToNext();
 			}
+			String con = "Enable = yes";
+
+			SensorObj sensorrawaudio = new SensorObj();
+			sensorrawaudio.setSensorName("RAW_AUDIO");
+			sensorrawaudio.setClassName("com.ubiqlog.sensors.RawAudioSensor");
+			sensorrawaudio.setConfigData(con.split(","));
+			sensorrawaudio.setAnnotationCalss(null);
+			allSensors.add(sensorrawaudio);
+
+			SensorObj sensorsleep = new SensorObj();
+			sensorsleep.setSensorName("SLEEP");
+			sensorsleep.setClassName("com.ubiqlog.sensors.SleepSensor");
+			sensorsleep.setConfigData(con.split(","));
+			sensorsleep.setAnnotationCalss(null);
+			allSensors.add(sensorsleep);
+
 		} catch (SQLException e) {
 			Log.e("SensorCatalouge","-------------------Error listing Sensors:"+ e.getMessage());
 		} finally {
@@ -120,7 +139,7 @@ public class SensorCatalouge {
 				addSensor("BATTERY", com.ubiqlog.sensors.BatterySensor.class.getName(), "Enable = yes", null);				   // 10 seconds
 				addSensor("SCREEN_INTERACTION", com.ubiqlog.sensors.InteractionSensor.class.getName(), "Enable = yes", null);  // 1 second
 				addSensor("ACCELEROMETER", com.ubiqlog.sensors.AccelerometerSensor.class.getName(), "Enable = yes", null);
-				//addSensor("RAW_AUDIO", com.ubiqlog.sensors.RawAudioSensor.class.getName(), "Enable = yes", null);
+				addSensor("RAW_AUDIO", com.ubiqlog.sensors.RawAudioSensor.class.getName(), "Enable = yes", null);
 				addSensor("AMBIENT_LIGHT", com.ubiqlog.sensors.AmbientLightSensor.class.getName(), "Enable = yes", null);
 
 				addSensor("APPLICATION",  com.ubiqlog.sensors.ApplicationSensor.class.getName(),"Enable = yes, Record interval=10000", null);
@@ -131,7 +150,7 @@ public class SensorCatalouge {
 				addSensor("LOCATION", com.ubiqlog.sensors.LocationSensor.class.getName(), "Enable = yes", null);
 				// addSensor("ACCELEROMETER", com.ubiqlog.sensors.Hardware.class.getName(), "Enable = no",null);
 				addSensor("PICTURE", com.ubiqlog.sensors.PictureSensor.class.getName(), "Enable = no, Record interval=30000", null);
-				//addSensor("AUDIO", com.ubiqlog.sensors.AudioSensor.class.getName(), "Enable = no", null);
+				addSensor("AUDIO", com.ubiqlog.sensors.AudioSensor.class.getName(), "Enable = yes", null);
 				addSensor("ACTIVITY", com.ubiqlog.sensors.ActivitySensor.class.getName(), "Enable = yes, Scan interval=30000",null);
 				addSensor("LOCATION_FUSE", com.ubiqlog.sensors.LocationGSSensor.class.getName(), "Enable = yes, Scan interval=60000", null);
 

@@ -5,7 +5,7 @@
     android:versionName="1.3" >
 
     <uses-sdk
-        android:minSdkVersion="9"
+        android:minSdkVersion="14"
         android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -228,6 +228,23 @@
             android:name="com.ubiqlog.sensors.AmbientLightSensor"
             android:enabled="true"
             android:exported="true" />
+        <service
+            android:name="com.ubiqlog.sensors.SleepSensor"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.ubiqlog.sensors.ApplicationAccessibilityService"
+            android:label="application_accessibility_service"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibilityservice" />
+        </service>
+
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
