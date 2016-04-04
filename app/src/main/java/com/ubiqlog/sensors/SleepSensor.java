@@ -16,13 +16,13 @@ import java.util.Date;
  */
 public class SleepSensor extends Service {
 
-    private final static int AUDIO_SIGNAL= 20;
-    private final static float ACC_FIX=0.5f;
-    private final static  int AMB_DARK =5;
-    private final boolean BATT_CHARGE=true;
+    private final static int AUDIO_SIGNAL= 20; // the noise below this value is silent
+    private final static float ACC_FIX=0.5f; // the fluctucations which presents moving
+    private final static  int AMB_DARK =5; // the ambient light limit that represents darkness
+    private final boolean BATT_CHARGE=true; // the battery is charging
 
-    private final int NoSleepingCheckInterval = 60000;
-    private final int SleepingCheckInterval = 300000;
+    private final int NoSleepingCheckInterval = 60000; // every minutes check if there is no sleep
+    private final int SleepingCheckInterval = 300000; // while user is slept every five minutes it checks if wakeup symptom has happened
 
     private boolean isSleeping = false;
     private static ArrayList<Float> accArray = new ArrayList<Float>();
@@ -98,7 +98,7 @@ public class SleepSensor extends Service {
 
     public boolean readSensor()
     {
-        if(isAudioSatisfy&&isAccSatisfy&&isCharge&&(ambientData<AMB_DARK))
+        if(isAudioSatisfy && isAccSatisfy && isCharge &&(ambientData<AMB_DARK))
         {
             return true;//satisfy the sleep condition
         }else{
@@ -106,9 +106,9 @@ public class SleepSensor extends Service {
         }
     }
     public static void setAudioArray(int i)
-    {   //18
+    {
         Log.e("AUdioValue",""+i);
-        if(i<AUDIO_SIGNAL)
+        if(i < AUDIO_SIGNAL)
         {
             isAudioSatisfy=true;// is silent
         }else {
@@ -118,15 +118,15 @@ public class SleepSensor extends Service {
 
     public static void setAccArray(float f)
     {
-        if(accArray.size()>=30)
+        if(accArray.size() >= 30)
         {
-            float total=0;
-            for(int i=0;i<accArray.size();i++)
+            float total = 0;
+            for(int i=0; i<accArray.size(); i++)
             {
-                total=total+accArray.get(i);
+                total= total + accArray.get(i);
             }
             //Log.e("SleepTAG",""+total/accArray.size());
-            isAccSatisfy=checkdifference(total/accArray.size(),accArray);
+            isAccSatisfy = checkdifference(total/accArray.size(),accArray);
 
             accArray.clear();
         }
@@ -143,6 +143,9 @@ public class SleepSensor extends Service {
         ambientData = lux;
     }
 
+    /**
+     * check the accelerometer if it is moving or not moving
+      */
     public static boolean checkdifference(float f,ArrayList<Float> accArray){
         for(int i=0;i<accArray.size();i++)
         {

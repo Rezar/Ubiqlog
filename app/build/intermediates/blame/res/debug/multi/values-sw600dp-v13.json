@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\res\\merged\\debug\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+        "outputFile": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/res/merged/debug/values-sw600dp-v13/values-sw600dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 119
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-sw600dp/values-sw600dp.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 189
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-sw600dp/values-sw600dp.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 263
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-sw600dp/values-sw600dp.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 339
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-sw600dp/values-sw600dp.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 398
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-sw600dp/values-sw600dp.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 469
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-sw600dp/values-sw600dp.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -125,7 +125,7 @@
                     "endOffset": 537
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-sw600dp/values-sw600dp.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -144,13 +144,13 @@
                     "endOffset": 610
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-sw600dp/values-sw600dp.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 297,
+                        "startOffset": 282,
                         "endColumn": 72,
-                        "endOffset": 365
+                        "endOffset": 350
                     }
                 }
             },
@@ -163,7 +163,7 @@
                     "endOffset": 665
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-sw600dp\\values-sw600dp.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-sw600dp/values-sw600dp.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,

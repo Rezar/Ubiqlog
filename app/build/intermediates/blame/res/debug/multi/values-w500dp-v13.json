@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\res\\merged\\debug\\values-w500dp-v13\\values-w500dp-v13.xml",
+        "outputFile": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/res/merged/debug/values-w500dp-v13/values-w500dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 105
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-w500dp\\values-w500dp.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-w500dp/values-w500dp.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

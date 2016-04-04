@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\res\\merged\\debug\\values-mr-rIN\\values-mr-rIN.xml",
+        "outputFile": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/res/merged/debug/values-mr-rIN/values-mr-rIN.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 218
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 326
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 449
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 555
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 662
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 752
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -125,7 +125,7 @@
                     "endOffset": 853
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -144,7 +144,7 @@
                     "endOffset": 968
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -163,7 +163,7 @@
                     "endOffset": 1045
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -182,7 +182,7 @@
                     "endOffset": 1123
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -201,7 +201,7 @@
                     "endOffset": 1203
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -220,7 +220,7 @@
                     "endOffset": 1315
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -239,7 +239,7 @@
                     "endOffset": 1417
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -258,7 +258,7 @@
                     "endOffset": 1513
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -277,7 +277,7 @@
                     "endOffset": 1622
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -296,7 +296,7 @@
                     "endOffset": 1723
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -315,7 +315,7 @@
                     "endOffset": 1838
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -334,7 +334,7 @@
                     "endOffset": 1961
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -353,7 +353,7 @@
                     "endOffset": 2066
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -368,17 +368,17 @@
                     "startLine": 21,
                     "startColumn": 4,
                     "startOffset": 2071,
-                    "endColumn": 185,
-                    "endOffset": 2252
+                    "endColumn": 258,
+                    "endOffset": 2325
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 24,
                         "startColumn": 4,
-                        "startOffset": 472,
-                        "endColumn": 189,
-                        "endOffset": 657
+                        "startOffset": 3432,
+                        "endColumn": 262,
+                        "endOffset": 3690
                     }
                 }
             },
@@ -386,18 +386,18 @@
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 2257,
-                    "endColumn": 177,
-                    "endOffset": 2430
+                    "startOffset": 2330,
+                    "endColumn": 126,
+                    "endOffset": 2452
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
                     "position": {
-                        "startLine": 18,
+                        "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 2565,
-                        "endColumn": 181,
-                        "endOffset": 2742
+                        "startOffset": 1295,
+                        "endColumn": 126,
+                        "endOffset": 1417
                     }
                 }
             },
@@ -405,18 +405,18 @@
                 "to": {
                     "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 2435,
-                    "endColumn": 116,
-                    "endOffset": 2547
+                    "startOffset": 2457,
+                    "endColumn": 195,
+                    "endOffset": 2648
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
                     "position": {
-                        "startLine": 16,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 2259,
-                        "endColumn": 116,
-                        "endOffset": 2371
+                        "startOffset": 1095,
+                        "endColumn": 199,
+                        "endOffset": 1290
                     }
                 }
             },
@@ -424,18 +424,18 @@
                 "to": {
                     "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 2552,
-                    "endColumn": 258,
-                    "endOffset": 2806
+                    "startOffset": 2653,
+                    "endColumn": 125,
+                    "endOffset": 2774
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
                     "position": {
-                        "startLine": 30,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 4391,
-                        "endColumn": 262,
-                        "endOffset": 4649
+                        "startOffset": 969,
+                        "endColumn": 125,
+                        "endOffset": 1090
                     }
                 }
             },
@@ -443,18 +443,18 @@
                 "to": {
                     "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 2811,
-                    "endColumn": 126,
-                    "endOffset": 2933
+                    "startOffset": 2779,
+                    "endColumn": 123,
+                    "endOffset": 2898
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
                     "position": {
-                        "startLine": 14,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 2003,
-                        "endColumn": 126,
-                        "endOffset": 2125
+                        "startOffset": 845,
+                        "endColumn": 123,
+                        "endOffset": 964
                     }
                 }
             },
@@ -462,18 +462,18 @@
                 "to": {
                     "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 2938,
-                    "endColumn": 195,
-                    "endOffset": 3129
+                    "startOffset": 2903,
+                    "endColumn": 204,
+                    "endOffset": 3103
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 1803,
-                        "endColumn": 199,
-                        "endOffset": 1998
+                        "startOffset": 423,
+                        "endColumn": 208,
+                        "endOffset": 627
                     }
                 }
             },
@@ -481,18 +481,18 @@
                 "to": {
                     "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 3134,
-                    "endColumn": 124,
-                    "endOffset": 3254
+                    "startOffset": 3108,
+                    "endColumn": 208,
+                    "endOffset": 3312
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 1678,
-                        "endColumn": 124,
-                        "endOffset": 1798
+                        "startOffset": 632,
+                        "endColumn": 212,
+                        "endOffset": 840
                     }
                 }
             },
@@ -500,18 +500,18 @@
                 "to": {
                     "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 3259,
-                    "endColumn": 174,
-                    "endOffset": 3429
+                    "startOffset": 3317,
+                    "endColumn": 122,
+                    "endOffset": 3435
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 833,
-                        "endColumn": 178,
-                        "endOffset": 1007
+                        "startOffset": 300,
+                        "endColumn": 122,
+                        "endOffset": 418
                     }
                 }
             },
@@ -519,18 +519,18 @@
                 "to": {
                     "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 3434,
-                    "endColumn": 123,
-                    "endOffset": 3553
+                    "startOffset": 3440,
+                    "endColumn": 186,
+                    "endOffset": 3622
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 1554,
-                        "endColumn": 123,
-                        "endOffset": 1673
+                        "startOffset": 2671,
+                        "endColumn": 186,
+                        "endOffset": 2853
                     }
                 }
             },
@@ -538,18 +538,18 @@
                 "to": {
                     "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 3558,
-                    "endColumn": 204,
-                    "endOffset": 3758
+                    "startOffset": 3627,
+                    "endColumn": 114,
+                    "endOffset": 3737
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
                     "position": {
-                        "startLine": 9,
+                        "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 1133,
-                        "endColumn": 208,
-                        "endOffset": 1337
+                        "startOffset": 2556,
+                        "endColumn": 114,
+                        "endOffset": 2666
                     }
                 }
             },
@@ -557,18 +557,18 @@
                 "to": {
                     "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 3763,
-                    "endColumn": 207,
-                    "endOffset": 3966
+                    "startOffset": 3742,
+                    "endColumn": 167,
+                    "endOffset": 3905
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
                     "position": {
-                        "startLine": 10,
+                        "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 1342,
-                        "endColumn": 211,
-                        "endOffset": 1549
+                        "startOffset": 2388,
+                        "endColumn": 167,
+                        "endOffset": 2551
                     }
                 }
             },
@@ -576,18 +576,18 @@
                 "to": {
                     "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 3971,
+                    "startOffset": 3910,
                     "endColumn": 120,
-                    "endOffset": 4087
+                    "endOffset": 4026
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
                     "position": {
-                        "startLine": 8,
+                        "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 1012,
+                        "startOffset": 2267,
                         "endColumn": 120,
-                        "endOffset": 1128
+                        "endOffset": 2383
                     }
                 }
             },
@@ -595,126 +595,12 @@
                 "to": {
                     "startLine": 33,
                     "startColumn": 4,
-                    "startOffset": 4092,
-                    "endColumn": 186,
-                    "endOffset": 4274
-                },
-                "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
-                    "position": {
-                        "startLine": 24,
-                        "startColumn": 4,
-                        "startOffset": 3494,
-                        "endColumn": 186,
-                        "endOffset": 3676
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 34,
-                    "startColumn": 4,
-                    "startOffset": 4279,
-                    "endColumn": 117,
-                    "endOffset": 4392
-                },
-                "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
-                    "position": {
-                        "startLine": 23,
-                        "startColumn": 4,
-                        "startOffset": 3376,
-                        "endColumn": 117,
-                        "endOffset": 3489
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 35,
-                    "startColumn": 4,
-                    "startOffset": 4397,
-                    "endColumn": 170,
-                    "endOffset": 4563
-                },
-                "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 662,
-                        "endColumn": 170,
-                        "endOffset": 828
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 36,
-                    "startColumn": 4,
-                    "startOffset": 4568,
-                    "endColumn": 167,
-                    "endOffset": 4731
-                },
-                "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
-                    "position": {
-                        "startLine": 22,
-                        "startColumn": 4,
-                        "startOffset": 3208,
-                        "endColumn": 167,
-                        "endOffset": 3371
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 37,
-                    "startColumn": 4,
-                    "startOffset": 4736,
-                    "endColumn": 120,
-                    "endOffset": 4852
-                },
-                "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 3087,
-                        "endColumn": 120,
-                        "endOffset": 3203
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 38,
-                    "startColumn": 4,
-                    "startOffset": 4857,
-                    "endColumn": 171,
-                    "endOffset": 5024
-                },
-                "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 300,
-                        "endColumn": 171,
-                        "endOffset": 467
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 39,
-                    "startColumn": 4,
-                    "startOffset": 5029,
+                    "startOffset": 4031,
                     "endColumn": 129,
-                    "endOffset": 5154
+                    "endOffset": 4156
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -726,20 +612,134 @@
             },
             {
                 "to": {
-                    "startLine": 40,
+                    "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 5159,
-                    "endColumn": 173,
-                    "endOffset": 5328
+                    "startOffset": 4161,
+                    "endColumn": 172,
+                    "endOffset": 4329
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
                     "position": {
-                        "startLine": 32,
+                        "startLine": 28,
                         "startColumn": 4,
-                        "startOffset": 4777,
-                        "endColumn": 173,
-                        "endOffset": 4946
+                        "startOffset": 4121,
+                        "endColumn": 172,
+                        "endOffset": 4289
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 4334,
+                    "endColumn": 130,
+                    "endOffset": 4460
+                },
+                "from": {
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 3990,
+                        "endColumn": 130,
+                        "endOffset": 4116
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 4465,
+                    "endColumn": 171,
+                    "endOffset": 4632
+                },
+                "from": {
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 3818,
+                        "endColumn": 171,
+                        "endOffset": 3985
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 4637,
+                    "endColumn": 122,
+                    "endOffset": 4755
+                },
+                "from": {
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 3695,
+                        "endColumn": 122,
+                        "endOffset": 3813
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 4760,
+                    "endColumn": 236,
+                    "endOffset": 4992
+                },
+                "from": {
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/res/values-mr-rIN/common_strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 170,
+                        "endColumn": 240,
+                        "endOffset": 406
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 4997,
+                    "endColumn": 247,
+                    "endOffset": 5240
+                },
+                "from": {
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 2978,
+                        "endColumn": 251,
+                        "endOffset": 3225
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 5245,
+                    "endColumn": 119,
+                    "endOffset": 5360
+                },
+                "from": {
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 2858,
+                        "endColumn": 119,
+                        "endOffset": 2973
                     }
                 }
             },
@@ -747,18 +747,18 @@
                 "to": {
                     "startLine": 41,
                     "startColumn": 4,
-                    "startOffset": 5333,
-                    "endColumn": 122,
-                    "endOffset": 5451
+                    "startOffset": 5365,
+                    "endColumn": 112,
+                    "endOffset": 5473
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
                     "position": {
-                        "startLine": 31,
+                        "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 4654,
-                        "endColumn": 122,
-                        "endOffset": 4772
+                        "startOffset": 3230,
+                        "endColumn": 112,
+                        "endOffset": 3338
                     }
                 }
             },
@@ -766,18 +766,18 @@
                 "to": {
                     "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 5456,
-                    "endColumn": 134,
-                    "endOffset": 5586
+                    "startOffset": 5478,
+                    "endColumn": 184,
+                    "endOffset": 5658
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
                     "position": {
-                        "startLine": 25,
+                        "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 3681,
-                        "endColumn": 134,
-                        "endOffset": 3811
+                        "startOffset": 1551,
+                        "endColumn": 188,
+                        "endOffset": 1735
                     }
                 }
             },
@@ -785,18 +785,18 @@
                 "to": {
                     "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 5591,
-                    "endColumn": 247,
-                    "endOffset": 5834
+                    "startOffset": 5663,
+                    "endColumn": 128,
+                    "endOffset": 5787
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
                     "position": {
-                        "startLine": 27,
+                        "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 3937,
-                        "endColumn": 251,
-                        "endOffset": 4184
+                        "startOffset": 1422,
+                        "endColumn": 128,
+                        "endOffset": 1546
                     }
                 }
             },
@@ -804,18 +804,18 @@
                 "to": {
                     "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 5839,
-                    "endColumn": 120,
-                    "endOffset": 5955
+                    "startOffset": 5792,
+                    "endColumn": 200,
+                    "endOffset": 5988
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
                     "position": {
-                        "startLine": 26,
+                        "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 3816,
-                        "endColumn": 120,
-                        "endOffset": 3932
+                        "startOffset": 2062,
+                        "endColumn": 204,
+                        "endOffset": 2262
                     }
                 }
             },
@@ -823,18 +823,18 @@
                 "to": {
                     "startLine": 45,
                     "startColumn": 4,
-                    "startOffset": 5960,
-                    "endColumn": 112,
-                    "endOffset": 6068
+                    "startOffset": 5993,
+                    "endColumn": 135,
+                    "endOffset": 6124
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
                     "position": {
-                        "startLine": 28,
+                        "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 4189,
-                        "endColumn": 112,
-                        "endOffset": 4297
+                        "startOffset": 1926,
+                        "endColumn": 135,
+                        "endOffset": 2057
                     }
                 }
             },
@@ -842,18 +842,18 @@
                 "to": {
                     "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 6073,
-                    "endColumn": 184,
-                    "endOffset": 6253
+                    "startOffset": 6129,
+                    "endColumn": 185,
+                    "endOffset": 6310
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
                     "position": {
-                        "startLine": 17,
+                        "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 2376,
-                        "endColumn": 188,
-                        "endOffset": 2560
+                        "startOffset": 1740,
+                        "endColumn": 185,
+                        "endOffset": 1921
                     }
                 }
             },
@@ -861,18 +861,18 @@
                 "to": {
                     "startLine": 47,
                     "startColumn": 4,
-                    "startOffset": 6258,
-                    "endColumn": 128,
-                    "endOffset": 6382
+                    "startOffset": 6315,
+                    "endColumn": 88,
+                    "endOffset": 6399
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
                     "position": {
-                        "startLine": 15,
+                        "startLine": 23,
                         "startColumn": 4,
-                        "startOffset": 2130,
-                        "endColumn": 128,
-                        "endOffset": 2254
+                        "startOffset": 3343,
+                        "endColumn": 88,
+                        "endOffset": 3427
                     }
                 }
             },
@@ -880,18 +880,18 @@
                 "to": {
                     "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 6387,
-                    "endColumn": 200,
-                    "endOffset": 6583
+                    "startOffset": 6404,
+                    "endColumn": 95,
+                    "endOffset": 6495
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
                     "position": {
-                        "startLine": 20,
+                        "startLine": 29,
                         "startColumn": 4,
-                        "startOffset": 2882,
-                        "endColumn": 204,
-                        "endOffset": 3082
+                        "startOffset": 4294,
+                        "endColumn": 95,
+                        "endOffset": 4385
                     }
                 }
             },
@@ -899,18 +899,18 @@
                 "to": {
                     "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 6588,
-                    "endColumn": 134,
-                    "endOffset": 6718
+                    "startOffset": 6500,
+                    "endColumn": 110,
+                    "endOffset": 6606
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-mr-rIN/base_strings.xml",
                     "position": {
-                        "startLine": 19,
+                        "startLine": 30,
                         "startColumn": 4,
-                        "startOffset": 2747,
-                        "endColumn": 134,
-                        "endOffset": 2877
+                        "startOffset": 4390,
+                        "endColumn": 110,
+                        "endOffset": 4496
                     }
                 }
             },
@@ -918,18 +918,18 @@
                 "to": {
                     "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 6723,
-                    "endColumn": 88,
-                    "endOffset": 6807
+                    "startOffset": 6611,
+                    "endColumn": 110,
+                    "endOffset": 6717
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.3.0\\res\\values-mr-rIN\\common_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
-                        "startLine": 29,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 4302,
-                        "endColumn": 88,
-                        "endOffset": 4386
+                        "startOffset": 282,
+                        "endColumn": 110,
+                        "endOffset": 388
                     }
                 }
             },
@@ -937,18 +937,18 @@
                 "to": {
                     "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 6812,
-                    "endColumn": 95,
-                    "endOffset": 6903
+                    "startOffset": 6722,
+                    "endColumn": 112,
+                    "endOffset": 6830
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\values-mr-rIN\\base_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
-                        "startLine": 3,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 170,
-                        "endColumn": 95,
-                        "endOffset": 261
+                        "startOffset": 393,
+                        "endColumn": 112,
+                        "endOffset": 501
                     }
                 }
             },
@@ -956,18 +956,18 @@
                 "to": {
                     "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 6908,
-                    "endColumn": 110,
-                    "endOffset": 7014
+                    "startOffset": 6835,
+                    "endColumn": 108,
+                    "endOffset": 6939
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\values-mr-rIN\\base_strings.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 266,
-                        "endColumn": 110,
-                        "endOffset": 372
+                        "startOffset": 506,
+                        "endColumn": 108,
+                        "endOffset": 610
                     }
                 }
             },
@@ -975,18 +975,18 @@
                 "to": {
                     "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 7019,
-                    "endColumn": 113,
-                    "endOffset": 7128
+                    "startOffset": 6944,
+                    "endColumn": 109,
+                    "endOffset": 7049
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 297,
-                        "endColumn": 113,
-                        "endOffset": 406
+                        "startOffset": 615,
+                        "endColumn": 109,
+                        "endOffset": 720
                     }
                 }
             },
@@ -994,18 +994,18 @@
                 "to": {
                     "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 7133,
-                    "endColumn": 112,
-                    "endOffset": 7241
+                    "startOffset": 7054,
+                    "endColumn": 128,
+                    "endOffset": 7178
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 411,
-                        "endColumn": 112,
-                        "endOffset": 519
+                        "startOffset": 725,
+                        "endColumn": 128,
+                        "endOffset": 849
                     }
                 }
             },
@@ -1013,18 +1013,18 @@
                 "to": {
                     "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 7246,
-                    "endColumn": 108,
-                    "endOffset": 7350
+                    "startOffset": 7183,
+                    "endColumn": 100,
+                    "endOffset": 7279
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
-                        "startLine": 6,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 524,
-                        "endColumn": 108,
-                        "endOffset": 628
+                        "startOffset": 854,
+                        "endColumn": 100,
+                        "endOffset": 950
                     }
                 }
             },
@@ -1032,18 +1032,18 @@
                 "to": {
                     "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 7355,
-                    "endColumn": 109,
-                    "endOffset": 7460
+                    "startOffset": 7284,
+                    "endColumn": 97,
+                    "endOffset": 7377
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 633,
-                        "endColumn": 109,
-                        "endOffset": 738
+                        "startOffset": 955,
+                        "endColumn": 97,
+                        "endOffset": 1048
                     }
                 }
             },
@@ -1051,18 +1051,18 @@
                 "to": {
                     "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 7465,
-                    "endColumn": 85,
-                    "endOffset": 7546
+                    "startOffset": 7382,
+                    "endColumn": 118,
+                    "endOffset": 7496
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
-                        "startLine": 8,
+                        "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 743,
-                        "endColumn": 85,
-                        "endOffset": 824
+                        "startOffset": 1053,
+                        "endColumn": 118,
+                        "endOffset": 1167
                     }
                 }
             },
@@ -1070,18 +1070,18 @@
                 "to": {
                     "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 7551,
-                    "endColumn": 96,
-                    "endOffset": 7643
+                    "startOffset": 7501,
+                    "endColumn": 106,
+                    "endOffset": 7603
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\22.2.0\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
-                        "startLine": 9,
+                        "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 829,
-                        "endColumn": 96,
-                        "endOffset": 921
+                        "startOffset": 1172,
+                        "endColumn": 106,
+                        "endOffset": 1274
                     }
                 }
             },
@@ -1089,12 +1089,88 @@
                 "to": {
                     "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 7648,
-                    "endColumn": 100,
-                    "endOffset": 7744
+                    "startOffset": 7608,
+                    "endColumn": 85,
+                    "endOffset": 7689
                 },
                 "from": {
-                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\values-mr-rIN\\values-mr-rIN.xml",
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-mr-rIN/values-mr-rIN.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1279,
+                        "endColumn": 85,
+                        "endOffset": 1360
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 60,
+                    "startColumn": 4,
+                    "startOffset": 7694,
+                    "endColumn": 96,
+                    "endOffset": 7786
+                },
+                "from": {
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-mr-rIN/values-mr-rIN.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1365,
+                        "endColumn": 96,
+                        "endOffset": 1457
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 61,
+                    "startColumn": 4,
+                    "startOffset": 7791,
+                    "endColumn": 101,
+                    "endOffset": 7888
+                },
+                "from": {
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/values-mr-rIN/location_strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 323,
+                        "endColumn": 101,
+                        "endOffset": 420
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 62,
+                    "startColumn": 4,
+                    "startOffset": 7893,
+                    "endColumn": 92,
+                    "endOffset": 7981
+                },
+                "from": {
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/values-mr-rIN/location_strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 230,
+                        "endColumn": 92,
+                        "endOffset": 318
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 63,
+                    "startColumn": 4,
+                    "startOffset": 7986,
+                    "endColumn": 100,
+                    "endOffset": 8082
+                },
+                "from": {
+                    "file": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-mr-rIN/values-mr-rIN.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,

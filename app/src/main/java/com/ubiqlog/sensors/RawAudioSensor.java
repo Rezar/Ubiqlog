@@ -66,7 +66,6 @@ public class RawAudioSensor extends Service {
         recorder = new AudioRecord(MediaRecorder.AudioSource.MIC,
                 RECORDER_SAMPLERATE, RECORDER_CHANNELS,
                 RECORDER_AUDIO_ENCODING, BufferElements2Rec * BytesPerElement);
-
         recorder.startRecording();
         isRecording = true;
         recordingThread = new Thread(new Runnable() {
@@ -118,7 +117,7 @@ public class RawAudioSensor extends Service {
                 total = total+Math.abs(sData[i]);
                 count++;
             }
-
+            // before writing to the file process the data and store them as the most recent data.
             if(count>=43008){
                 SleepSensor.setAudioArray(total/count);
                 count=0;
