@@ -1,0 +1,539 @@
+[
+    {
+        "outputFile": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\res\\merged\\debug\\values-fr-rCA\\values-fr-rCA.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 166,
+                    "endOffset": 267
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 687,
+                        "endColumn": 166,
+                        "endOffset": 849
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 272,
+                    "endColumn": 194,
+                    "endOffset": 462
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 2825,
+                        "endColumn": 194,
+                        "endOffset": 3015
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 467,
+                    "endColumn": 117,
+                    "endOffset": 580
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 2508,
+                        "endColumn": 117,
+                        "endOffset": 2621
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 585,
+                    "endColumn": 132,
+                    "endOffset": 713
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 2237,
+                        "endColumn": 132,
+                        "endOffset": 2365
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 718,
+                    "endColumn": 195,
+                    "endOffset": 909
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 2041,
+                        "endColumn": 195,
+                        "endOffset": 2232
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 914,
+                    "endColumn": 130,
+                    "endOffset": 1040
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1910,
+                        "endColumn": 130,
+                        "endOffset": 2036
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 1045,
+                    "endColumn": 168,
+                    "endOffset": 1209
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 1026,
+                        "endColumn": 172,
+                        "endOffset": 1194
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 1214,
+                    "endColumn": 135,
+                    "endOffset": 1345
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1774,
+                        "endColumn": 135,
+                        "endOffset": 1905
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 1350,
+                    "endColumn": 220,
+                    "endOffset": 1566
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 1332,
+                        "endColumn": 220,
+                        "endOffset": 1548
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 1571,
+                    "endColumn": 220,
+                    "endOffset": 1787
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1553,
+                        "endColumn": 220,
+                        "endOffset": 1769
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1792,
+                    "endColumn": 132,
+                    "endOffset": 1920
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 1199,
+                        "endColumn": 132,
+                        "endOffset": 1327
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1925,
+                    "endColumn": 195,
+                    "endOffset": 2116
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 3455,
+                        "endColumn": 195,
+                        "endOffset": 3646
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 2121,
+                    "endColumn": 121,
+                    "endOffset": 2238
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 3333,
+                        "endColumn": 121,
+                        "endOffset": 3450
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 2243,
+                    "endColumn": 171,
+                    "endOffset": 2410
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 854,
+                        "endColumn": 171,
+                        "endOffset": 1021
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 2415,
+                    "endColumn": 192,
+                    "endOffset": 2603
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 3140,
+                        "endColumn": 192,
+                        "endOffset": 3328
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 2608,
+                    "endColumn": 119,
+                    "endOffset": 2723
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 3020,
+                        "endColumn": 119,
+                        "endOffset": 3135
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 2728,
+                    "endColumn": 189,
+                    "endOffset": 2913
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 313,
+                        "endColumn": 189,
+                        "endOffset": 498
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 2918,
+                    "endColumn": 183,
+                    "endOffset": 3097
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 503,
+                        "endColumn": 183,
+                        "endOffset": 682
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 3102,
+                    "endColumn": 142,
+                    "endOffset": 3240
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 170,
+                        "endColumn": 142,
+                        "endOffset": 308
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 3245,
+                    "endColumn": 147,
+                    "endOffset": 3388
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 3651,
+                        "endColumn": 147,
+                        "endOffset": 3794
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 3393,
+                    "endColumn": 276,
+                    "endOffset": 3665
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 3924,
+                        "endColumn": 276,
+                        "endOffset": 4196
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 3670,
+                    "endColumn": 124,
+                    "endOffset": 3790
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 3799,
+                        "endColumn": 124,
+                        "endOffset": 3919
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 3795,
+                    "endColumn": 113,
+                    "endOffset": 3904
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 4201,
+                        "endColumn": 113,
+                        "endOffset": 4310
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 3909,
+                    "endColumn": 198,
+                    "endOffset": 4103
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 2626,
+                        "endColumn": 198,
+                        "endOffset": 2820
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 4108,
+                    "endColumn": 137,
+                    "endOffset": 4241
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 2370,
+                        "endColumn": 137,
+                        "endOffset": 2503
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 4246,
+                    "endColumn": 101,
+                    "endOffset": 4343
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 4522,
+                        "endColumn": 101,
+                        "endOffset": 4619
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 4348,
+                    "endColumn": 93,
+                    "endOffset": 4437
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 4315,
+                        "endColumn": 93,
+                        "endOffset": 4404
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 4442,
+                    "endColumn": 112,
+                    "endOffset": 4550
+                },
+                "from": {
+                    "file": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\values-fr-rCA\\common_strings.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 4409,
+                        "endColumn": 112,
+                        "endOffset": 4517
+                    }
+                }
+            }
+        ]
+    }
+]

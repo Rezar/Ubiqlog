@@ -121,6 +121,13 @@ public class SensorCatalouge {
 			sensorsleep.setAnnotationCalss(null);
 			allSensors.add(sensorsleep);
 
+			SensorObj sensorwear = new SensorObj();
+			sensorwear.setSensorName("Wear");
+			sensorwear.setClassName("com.ubiqlog.sensors.WearSensor");
+			sensorwear.setConfigData(con.split(","));
+			sensorwear.setAnnotationCalss(null);
+			allSensors.add(sensorwear);
+
 		} catch (SQLException e) {
 			Log.e("SensorCatalouge","-------------------Error listing Sensors:"+ e.getMessage());
 		} finally {

@@ -24,6 +24,9 @@ public class SleepSensor extends Service {
     private final int NoSleepingCheckInterval = 60000; // every minutes check if there is no sleep
     private final int SleepingCheckInterval = 300000; // while user is slept every five minutes it checks if wakeup symptom has happened
 
+    private static boolean IS_WEAR_ACC=false;
+    private static boolean IS_WEAR_AMB=false;
+
     private boolean isSleeping = false;
     private static ArrayList<Float> accArray = new ArrayList<Float>();
     private static boolean isAccSatisfy=false;//condition of accelemeter, if satisfy the sleep, the value will be yes
@@ -155,6 +158,16 @@ public class SleepSensor extends Service {
         }
 
         return true;
+    }
+
+    public static void setWEAR_ACC(boolean f)
+    {
+        IS_WEAR_ACC= f;
+    }
+
+    public static void setWEAR_AMB(boolean i)
+    {
+        IS_WEAR_AMB=i;
     }
     @Override
     public IBinder onBind(Intent intent) {

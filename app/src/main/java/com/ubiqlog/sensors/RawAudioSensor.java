@@ -11,9 +11,6 @@ import android.util.Log;
 
 import com.ubiqlog.common.Setting;
 import com.ubiqlog.core.DataAcquisitor;
-import com.ubiqlog.utils.JsonEncodeDecode;
-
-import java.util.Date;
 
 public class RawAudioSensor extends Service {
 
@@ -127,16 +124,16 @@ public class RawAudioSensor extends Service {
             //Log.e("RAWAUDIO", ""+sData.length);
 
             // Convert short array into byte array
-            byte [] bData = short2byte(sData);
+            //byte [] bData = short2byte(sData);
 
             // Convert byte array to Base64 string to be stored in JSON
-            String encodedData = android.util.Base64.encodeToString(bData, android.util.Base64.DEFAULT);
+            //String encodedData = android.util.Base64.encodeToString(bData, android.util.Base64.DEFAULT);
             //byte [] tempBytes = android.util.Base64.decode(s, android.util.Base64.DEFAULT);
 
             // Store the Base64 String in a RawAudio file
-            String encoded = JsonEncodeDecode.EncodeRawAudio(encodedData, new Date());
+            //String encoded = JsonEncodeDecode.EncodeRawAudio(encodedData, new Date());
             //Log.d("Accelerometer-encoded", encoded);
-            mDataBuffer.insert(encoded, true, Setting.bufferMaxSize);
+            //mDataBuffer.insert(encoded, true, Setting.bufferMaxSize);
 
         } else {
             Log.d(getClass().getSimpleName(), "Attempting to write data but recorder is null");

@@ -1,10 +1,14 @@
 [
     {
-        "merged": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\res\\merged\\debug\\xml\\accessibilityservice.xml",
-        "source": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\src\\main\\res\\xml\\accessibilityservice.xml"
+        "merged": "C:\\Users\\rawassizadeh\\WORK\\AndroidStudioProjects\\Ubiqlog\\C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\res\\merged\\debug\\xml\\accessibilityservice.xml",
+        "source": "C:\\Users\\rawassizadeh\\WORK\\AndroidStudioProjects\\Ubiqlog\\C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\src\\main\\res\\xml\\accessibilityservice.xml"
     },
     {
-        "merged": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/build/intermediates/res/merged/debug/xml/accessibilityservice.xml",
-        "source": "/Users/rawassizadeh/WORK/AndroidStudioProjects/Ubiqlog/app/src/main/res/xml/accessibilityservice.xml"
+        "merged": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\res\\merged\\debug\\xml\\accessibilityservice.xml",
+        "source": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\src\\main\\res\\xml\\accessibilityservice.xml"
+    },
+    {
+        "merged": "C:\\Users\\rawassizadeh\\WORK\\AndroidStudioProjects\\Ubiqlog\\app\\build\\intermediates\\res\\merged\\debug\\xml\\accessibilityservice.xml",
+        "source": "C:\\Users\\rawassizadeh\\WORK\\AndroidStudioProjects\\Ubiqlog\\app\\src\\main\\res\\xml\\accessibilityservice.xml"
     }
 ]

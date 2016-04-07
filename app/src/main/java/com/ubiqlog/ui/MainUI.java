@@ -14,6 +14,7 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
@@ -21,6 +22,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.view.Window;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout;
@@ -32,6 +34,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.ResultCallback;
+import com.google.android.gms.wearable.MessageApi;
+import com.google.android.gms.wearable.MessageEvent;
+import com.google.android.gms.wearable.Node;
+import com.google.android.gms.wearable.NodeApi;
+import com.google.android.gms.wearable.Wearable;
 import com.ubiqlog.common.Setting;
 import com.ubiqlog.core.Engine;
 import com.ubiqlog.core.SensorCatalouge;
@@ -48,6 +58,7 @@ import com.ubiqlog.sensors.PictureSensor;
 import com.ubiqlog.sensors.SMSSensor;
 import com.ubiqlog.sensors.SensorObj;
 import com.ubiqlog.sensors.SleepSensor;
+import com.ubiqlog.sensors.WearSensor;
 import com.ubiqlog.sensors.WiFiSensor;
 
 import java.io.FileNotFoundException;
@@ -57,7 +68,6 @@ import java.util.Properties;
 
 
 public class MainUI extends Activity {
-
 	TextView tv_status = null;
 	Context ctx = null;
 	ScrollView sv_info = null;
@@ -81,7 +91,6 @@ public class MainUI extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
 		// init the setting with context
 		com.ubiqlog.common.Setting.Instance(this);
 
@@ -359,6 +368,9 @@ public class MainUI extends Activity {
 		Engine.stopRecording(getApplicationContext(), this.getApplication());
 		Intent stopSleep = new Intent(this, SleepSensor.class);
 		stopService(stopSleep);
+
+		Intent stopwear = new Intent(this, WearSensor.class);
+		stopService(stopwear);
 
 		Intent notiI = new Intent();
 		notiI.setClass(getApplication(), UbiqlogStatusBar.class);

@@ -1,0 +1,8 @@
+C:\Users\ibm\Desktop\wearable-message-api-example\wear\build\intermediates\classes\debug
+C:\Users\ibm\Desktop\wearable-message-api-example\wear\build\intermediates\pre-dexed\debug\support-annotations-21.0.0-403329debf13f7c10d7669741e0b0b367f1ddd9d.jar
+C:\Users\ibm\Desktop\wearable-message-api-example\wear\build\intermediates\pre-dexed\debug\classes-3db25717145a2d861fe8a173e9a256ba925e61ba.jar
+C:\Users\ibm\Desktop\wearable-message-api-example\wear\build\intermediates\pre-dexed\debug\internal_impl-21.0.0-c5848621a60b20b8308c2649577d40cd5e866596.jar
+C:\Users\ibm\Desktop\wearable-message-api-example\wear\build\intermediates\pre-dexed\debug\classes-329bde883920f3258c1ba3d3aac3939f7894d22c.jar
+C:\Users\ibm\Desktop\wearable-message-api-example\wear\build\intermediates\pre-dexed\debug\classes-da4e1a27eeb53946886ad57a57a3652a7e439b6c.jar
+C:\Users\ibm\Desktop\wearable-message-api-example\wear\build\intermediates\pre-dexed\debug\classes-618909b08c9928feba7d4630e0cedb82609ecb15.jar
+C:\Users\ibm\Desktop\wearable-message-api-example\wear\build\intermediates\pre-dexed\debug\classes-e12c01eb12f063227fbe5ab7f2c0d416e6b72aa6.jar

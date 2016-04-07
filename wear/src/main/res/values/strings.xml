@@ -1,0 +1,30 @@
+<!--
+  ~ Copyright 2015 Dejan Djurovski
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="app_name">Wearable Message Api Example</string>
+    <string name="received_message1">Message 1.</string>
+    <string name="received_message2">Message 2.</string>
+    <string name="received_messages">Received messages:</string>
+    <string name="send_message1">Send msg. 1</string>
+    <string name="send_message2">Send msg. 2</string>
+    <string name="message1_sent">Message 1 sent.</string>
+    <string name="error_message1">Error sending message 1.</string>
+    <string name="message2_sent">Message 2 sent.</string>
+    <string name="error_message2">Error sending message 2.</string>
+    <string name="peer_connected">Peer connected.</string>
+    <string name="peer_disconnected">Peer disconnected.</string>
+</resources>
