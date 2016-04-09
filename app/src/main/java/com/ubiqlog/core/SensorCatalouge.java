@@ -122,7 +122,7 @@ public class SensorCatalouge {
 			allSensors.add(sensorsleep);
 
 			SensorObj sensorwear = new SensorObj();
-			sensorwear.setSensorName("Wear");
+			sensorwear.setSensorName("WEAR");
 			sensorwear.setClassName("com.ubiqlog.sensors.WearSensor");
 			sensorwear.setConfigData(con.split(","));
 			sensorwear.setAnnotationCalss(null);

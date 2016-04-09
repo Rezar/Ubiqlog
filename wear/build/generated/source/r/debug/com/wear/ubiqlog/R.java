@@ -452,14 +452,15 @@ containing a value of this type.
         public static final int error_message=0x7f0a000c;
         public static final int left=0x7f0a0002;
         public static final int message=0x7f0a000f;
-        public static final int message1Button=0x7f0a0015;
-        public static final int message2Button=0x7f0a0014;
+        public static final int message1Button=0x7f0a0016;
+        public static final int message2Button=0x7f0a0015;
         public static final int none=0x7f0a0007;
-        public static final int receivedMessagesEditText=0x7f0a0013;
+        public static final int receivedMessagesEditText=0x7f0a0014;
         public static final int right=0x7f0a0003;
-        public static final int text=0x7f0a0017;
-        public static final int textView2=0x7f0a0012;
-        public static final int title=0x7f0a0016;
+        public static final int text=0x7f0a0018;
+        public static final int textView1=0x7f0a0012;
+        public static final int textView2=0x7f0a0013;
+        public static final int title=0x7f0a0017;
         public static final int top=0x7f0a0004;
     }
     public static final class integer {

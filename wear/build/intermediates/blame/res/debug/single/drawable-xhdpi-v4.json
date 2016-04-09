@@ -256,10 +256,6 @@
         "source": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.support\\wearable\\1.1.0\\res\\drawable-xhdpi-v4\\generic_confirmation_00166.png"
     },
     {
-        "merged": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
-        "source": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\common_signin_btn_text_disabled_light.9.png",
         "source": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\wear\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\6.5.87\\res\\drawable-xhdpi\\common_signin_btn_text_disabled_light.9.png"
     },

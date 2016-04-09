@@ -20,6 +20,7 @@ import com.google.android.gms.wearable.Wearable;
 public class WearSensor extends Service {
 
     private final String MESSAGE1_PATH = "/message1";
+    private final String MESSAGE2_PATH = "/message2";
     private GoogleApiClient apiClient;
     private NodeApi.NodeListener nodeListener;
     private String remoteNodeId;
@@ -67,8 +68,19 @@ public class WearSensor extends Service {
                 if (messageEvent.getPath().equals(MESSAGE1_PATH)) {
                     Log.e("Wear-Logging", "wwwwwrrrrr");
                     String s = new String(messageEvent.getData());
-                    String[] s1 = s.split(",");
-                    SleepSensor.setWEAR_ACC(Boolean.getBoolean(s1[1]));
+                    SleepSensor.setWEAR_ACC(Boolean.getBoolean(s));
+                    //Toast.makeText(getBaseContext(),new String(messageEvent.getData()),Toast.LENGTH_LONG).show();
+                }else if (messageEvent.getPath().equals(MESSAGE2_PATH)) {
+                    Log.e("Wear-Logging", "wwwwwrrrrr");
+                    String s = new String(messageEvent.getData());
+                    Float f = Float.parseFloat(s);
+                    if(f>20)
+                    {
+                        SleepSensor.setWEAR_AMB(false);
+                    }else{
+                        SleepSensor.setWEAR_AMB(true);
+                    }
+
                     //Toast.makeText(getBaseContext(),new String(messageEvent.getData()),Toast.LENGTH_LONG).show();
                 }
 

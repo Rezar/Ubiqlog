@@ -156,7 +156,8 @@ public class LightSensor extends Service implements SensorEventListener {
 
                 //String encoded_SA = SemanticTempCSVUtil.encodeLight(avg, date);
                 //mSA_lightBuffer.insert(encoded_SA, true, Setting.bufferMaxSize); // 1 for BufferMaxSize causes to flush Buffer automatically after inserting value
-                Wearable.MessageApi.sendMessage(apiClient, remoteNodeId, MESSAGE1_PATH, null).setResultCallback(new ResultCallback<MessageApi.SendMessageResult>() {
+                String s = ""+avg;
+                Wearable.MessageApi.sendMessage(apiClient, remoteNodeId, MESSAGE2_PATH, s.getBytes()).setResultCallback(new ResultCallback<MessageApi.SendMessageResult>() {
                     @Override
                     public void onResult(MessageApi.SendMessageResult sendMessageResult) {
 
@@ -168,6 +169,13 @@ public class LightSensor extends Service implements SensorEventListener {
 
                 // stop the service. The service will run after 15min by ServiceMonitor class(AlarmService)
                 //stopSelf();
+                try {
+                    //sleep current thread for about 30sec to get a new sample
+                    Thread.sleep(300000);
+                    // register a listener to waiting for onSensorChanged() event
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
             } else {
                 try {

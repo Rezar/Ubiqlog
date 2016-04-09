@@ -168,7 +168,7 @@ public class AccelerometerSensor extends Service implements SensorEventListener 
                         total=total+acc_array.get(i);
                     }
                     float result = total/acc_array.size();
-                    final String s = result+","+checkdifference(result,acc_array);
+                    String s = ""+checkdifference(result,acc_array);
 
                     Wearable.MessageApi.sendMessage(apiClient, remoteNodeId, MESSAGE1_PATH, s.getBytes()).setResultCallback(new ResultCallback<MessageApi.SendMessageResult>() {
                         @Override
@@ -177,12 +177,7 @@ public class AccelerometerSensor extends Service implements SensorEventListener 
                         }
                     });
                     acc_array.clear();
-                    MainActivity.handler.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            MainActivity.receivedMessagesEditText.append("\n" + s);
-                        }
-                    });
+
                 }
                 // Save x and y axis changes
                 //String encoded = JSONUtil.encodeAccelerometer(x, new Date());

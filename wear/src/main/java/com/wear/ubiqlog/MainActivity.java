@@ -17,13 +17,16 @@
 package com.wear.ubiqlog;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.os.Bundle;
-import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
@@ -46,16 +49,19 @@ public class MainActivity extends Activity {
     private NodeApi.NodeListener nodeListener;
     private MessageApi.MessageListener messageListener;
     private String remoteNodeId;
-    public static Handler handler;
+
+    private SensorManager mSensorManager;
+    private TextView textview1;
+    private TextView textview2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
 
-        handler = new Handler();
+        textview1 = (TextView)findViewById(R.id.textView1);
+        textview2 = (TextView)findViewById(R.id.textView2);
 
-        receivedMessagesEditText = (EditText) findViewById(R.id.receivedMessagesEditText);
         message1Button = findViewById(R.id.message1Button);
         message2Button = findViewById(R.id.message2Button);
 
@@ -130,6 +136,17 @@ public class MainActivity extends Activity {
                 message2Button.setEnabled(false);
             }
         }).addApi(Wearable.API).build();
+
+        mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        if (mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER) != null){
+            // Success!
+            textview1.setText("Enabled");
+        }
+
+        if (mSensorManager.getDefaultSensor(Sensor.TYPE_LIGHT) != null){
+            // Success!
+            textview2.setText("Enabled");
+        }
     }
 
     @Override
@@ -150,6 +167,8 @@ public class MainActivity extends Activity {
         } else {
             apiClient.connect();
         }
+        message1Button.setEnabled(true);
+        message2Button.setEnabled(true);
     }
 
     @Override

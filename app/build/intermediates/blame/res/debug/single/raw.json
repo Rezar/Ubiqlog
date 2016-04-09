@@ -1,10 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\rawassizadeh\\WORK\\AndroidStudioProjects\\Ubiqlog\\app\\build\\intermediates\\res\\merged\\debug\\raw\\gtm_analytics",
-        "source": "C:\\Users\\rawassizadeh\\WORK\\AndroidStudioProjects\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-analytics\\8.4.0\\res\\raw\\gtm_analytics"
-    },
-    {
         "merged": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\res\\merged\\debug\\raw\\gtm_analytics",
         "source": "C:\\Users\\ibm\\Desktop\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-analytics\\8.4.0\\res\\raw\\gtm_analytics"
+    },
+    {
+        "merged": "C:\\Users\\rawassizadeh\\WORK\\AndroidStudioProjects\\Ubiqlog\\app\\build\\intermediates\\res\\merged\\debug\\raw\\gtm_analytics",
+        "source": "C:\\Users\\rawassizadeh\\WORK\\AndroidStudioProjects\\Ubiqlog\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-analytics\\8.4.0\\res\\raw\\gtm_analytics"
     }
 ]
