@@ -17,6 +17,7 @@
 package com.wear.ubiqlog;
 
 import android.app.Activity;
+import android.app.ActivityManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -25,6 +26,7 @@ import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -44,8 +46,7 @@ public class MainActivity extends Activity {
 
     private GoogleApiClient apiClient;
     public static EditText receivedMessagesEditText;
-    private View message1Button;
-    private View message2Button;
+    private Button message2Button;
     private NodeApi.NodeListener nodeListener;
     private MessageApi.MessageListener messageListener;
     private String remoteNodeId;
@@ -62,26 +63,29 @@ public class MainActivity extends Activity {
         textview1 = (TextView)findViewById(R.id.textView1);
         textview2 = (TextView)findViewById(R.id.textView2);
 
-        message1Button = findViewById(R.id.message1Button);
-        message2Button = findViewById(R.id.message2Button);
+        message2Button = (Button)findViewById(R.id.message2Button);
 
-        // Set message1Button onClickListener to send message 1
-        message1Button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this,AccelerometerSensor.class);
-                stopService(i);
-                Log.e("MMM","Stop service");
-            }
-        });
 
-        // Set message2Button onClickListener to send message 2
         message2Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this,AccelerometerSensor.class);
-                startService(i);
-                Log.e("MMM", "START service");
+                if(message2Button.getText().toString().equals("Start Service"))
+                {
+                    Intent i1 = new Intent(MainActivity.this,AccelerometerSensor.class);
+                    startService(i1);
+                    Intent i2 = new Intent(MainActivity.this,LightSensor.class);
+                    startService(i2);
+                    message2Button.setText("Stop Service");
+                    Log.e("MMM", "START service");
+                }else{
+                    Intent i1 = new Intent(MainActivity.this,AccelerometerSensor.class);
+                    stopService(i1);
+                    Intent i2 = new Intent(MainActivity.this,LightSensor.class);
+                    startService(i2);
+                    message2Button.setText("Start Service");
+                    Log.e("MMM", "Stop service");
+                }
+
             }
         });
 
@@ -123,7 +127,7 @@ public class MainActivity extends Activity {
                     public void onResult(NodeApi.GetConnectedNodesResult getConnectedNodesResult) {
                         if (getConnectedNodesResult.getStatus().isSuccess() && getConnectedNodesResult.getNodes().size() > 0) {
                             remoteNodeId = getConnectedNodesResult.getNodes().get(0).getId();
-                            message1Button.setEnabled(true);
+
                             message2Button.setEnabled(true);
                         }
                     }
@@ -132,7 +136,7 @@ public class MainActivity extends Activity {
 
             @Override
             public void onConnectionSuspended(int i) {
-                message1Button.setEnabled(false);
+
                 message2Button.setEnabled(false);
             }
         }).addApi(Wearable.API).build();
@@ -167,8 +171,13 @@ public class MainActivity extends Activity {
         } else {
             apiClient.connect();
         }
-        message1Button.setEnabled(true);
+
         message2Button.setEnabled(true);
+        if(isMyServiceRunning(AccelerometerSensor.class)){
+            message2Button.setText("Stop Service");
+        }else{
+            message2Button.setText("Start Service");
+        }
     }
 
     @Override
@@ -177,8 +186,18 @@ public class MainActivity extends Activity {
         //Wearable.NodeApi.removeListener(apiClient, nodeListener);
        //Wearable.MessageApi.removeListener(apiClient, messageListener);
        //apiClient.disconnect();
-        message1Button.setEnabled(false);
+
         message2Button.setEnabled(false);
         super.onPause();
+    }
+
+    private boolean isMyServiceRunning(Class<?> serviceClass) {
+        ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+        for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
+            if (serviceClass.getName().equals(service.service.getClassName())) {
+                return true;
+            }
+        }
+        return false;
     }
 }
