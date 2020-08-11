@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "F:\\YI RONG\\BU\\Research\\Ubiqlog\\wear\\build\\intermediates\\res\\merged\\debug\\layout_main_activity.xml.flat",
+        "source": "F:\\YI RONG\\BU\\Research\\Ubiqlog\\wear\\src\\main\\res\\layout\\main_activity.xml"
+    },
+    {
+        "merged": "F:\\YI RONG\\BU\\Research\\Ubiqlog\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher.png.flat",
+        "source": "F:\\YI RONG\\BU\\Research\\Ubiqlog\\wear\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\YI RONG\\BU\\Research\\Ubiqlog\\wear\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher.png.flat",
+        "source": "F:\\YI RONG\\BU\\Research\\Ubiqlog\\wear\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    }
+]

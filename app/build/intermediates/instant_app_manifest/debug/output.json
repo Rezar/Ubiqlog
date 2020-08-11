@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "applicationId": "com.ubiqlog.ui",
+  "variantType": "BASE_APK",
+  "elements": [
+    {
+      "outputType": {
+        "type": "INSTANT_APP_MANIFEST"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 1,
+        "versionName": "1.3",
+        "outputFile": "app-debug.apk",
+        "fullName": "debug",
+        "baseName": "debug",
+        "dirName": ""
+      },
+      "path": "AndroidManifest.xml",
+      "properties": {
+        "packageId": "com.ubiqlog.ui",
+        "split": "",
+        "minSdkVersion": "19"
+      }
+    }
+  ]
+}

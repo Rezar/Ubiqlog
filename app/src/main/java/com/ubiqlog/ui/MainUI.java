@@ -1,6 +1,7 @@
 package com.ubiqlog.ui;
 
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningServiceInfo;
@@ -88,6 +89,7 @@ public class MainUI extends Activity {
 	private SensorCatalouge senCat;
 
 	/** Called when the activity is first created. */
+	@SuppressLint("ResourceType")
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

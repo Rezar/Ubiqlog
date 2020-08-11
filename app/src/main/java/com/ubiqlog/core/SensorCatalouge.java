@@ -33,7 +33,9 @@ public class SensorCatalouge {
 	}
 
 	public void closeDB(Context ctx) {
-		db.close();
+		if (db != null) {
+			db.close();
+		}
 	}
 
 	public void addSensor(String sensorname, String classname,String configdata, String annotation) {

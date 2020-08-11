@@ -4,7 +4,7 @@ package com.ubiqlog.ui;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;

@@ -1,0 +1,525 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ubiqlog.ui"
+4    android:versionCode="1"
+5    android:versionName="1.3" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml
+10
+11    <!-- <uses-sdk android:minSdkVersion="21" -->
+12    <!-- tools:ignore="GradleOverrides" /> -->
+13
+14    <uses-permission android:name="android.permission.READ_CONTACTS" />
+14-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:11:5-72
+14-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:11:22-69
+15    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+15-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:12:5-72
+15-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:12:22-69
+16    <uses-permission android:name="android.permission.READ_SMS" />
+16-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:13:5-67
+16-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:13:22-64
+17    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+17-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:14:5-75
+17-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:14:22-72
+18    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+18-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:15:5-71
+18-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:15:22-68
+19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+19-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:16:5-81
+19-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:16:22-78
+20    <uses-permission android:name="android.permission.INTERNET" />
+20-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:17:5-67
+20-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:17:22-64
+21    <uses-permission android:name="android.permission.LOCATION" />
+21-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:18:5-67
+21-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:18:22-64
+22    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+22-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:19:5-79
+22-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:19:22-76
+23    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+23-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:20:5-81
+23-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:20:22-78
+24    <uses-permission android:name="android.permission.BLUETOOTH" />
+24-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:21:5-68
+24-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:21:22-65
+25    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+25-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:22:5-74
+25-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:22:22-71
+26    <uses-permission android:name="android.permission.CAMERA" />
+26-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:23:5-65
+26-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:23:22-62
+27    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+27-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:24:5-79
+27-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:24:22-76
+28    <uses-permission android:name="android.permission.GET_TASKS" />
+28-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:25:5-68
+28-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:25:22-65
+29    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+29-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:26:5-76
+29-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:26:22-73
+30    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+30-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:27:5-76
+30-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:27:22-73
+31    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+31-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:28:5-94
+31-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:28:22-91
+32    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+32-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:29:5-81
+32-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:29:22-78
+33
+34    <!-- Google maps permissions -->
+35    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+35-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:32:5-80
+35-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:32:22-77
+36
+37    <permission
+37-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:34:5-36:47
+38        android:name="com.ubiqlog.ui.permission.MAP_RECEIVE"
+38-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:35:9-61
+39        android:protectionLevel="signature" />
+39-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:36:9-44
+40
+41    <uses-permission android:name="com.ubiqlog.ui.permission.MAP_RECEIVE" />
+41-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:38:5-77
+41-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:38:22-74
+42    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+42-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:39:5-98
+42-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:39:22-95
+43    <!-- Maps API needs OpenGL ES 2.0. -->
+44    <uses-feature
+44-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:41:5-43:35
+45        android:glEsVersion="0x00020000"
+45-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:42:9-41
+46        android:required="true" />
+46-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:43:9-32
+47
+48    <!-- Accelerometer feature -->
+49    <uses-feature
+49-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:46:5-48:35
+50        android:name="android.hardware.sensor.accelerometer"
+50-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:47:9-61
+51        android:required="true" />
+51-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:48:9-32
+52    <!-- Light feature -->
+53    <uses-feature
+53-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:50:5-52:35
+54        android:name="android.hardware.sensor.light"
+54-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:51:9-53
+55        android:required="true" />
+55-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:52:9-32
+56    <!-- microphone feature -->
+57    <uses-feature
+57-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:54:5-56:35
+58        android:name="android.hardware.microphone"
+58-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:55:9-51
+59        android:required="true" />
+59-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:56:9-32
+60
+61    <!-- Required by older versions of Google Play services to create GCM registration tokens -->
+62    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+62-->[com.google.android.gms:play-services-gcm:17.0.0] F:\Android\.gradle\caches\transforms-2\files-2.1\b596ad2fe194b51d90aea60f99316acc\jetified-play-services-gcm-17.0.0\AndroidManifest.xml:23:5-82
+62-->[com.google.android.gms:play-services-gcm:17.0.0] F:\Android\.gradle\caches\transforms-2\files-2.1\b596ad2fe194b51d90aea60f99316acc\jetified-play-services-gcm-17.0.0\AndroidManifest.xml:23:22-79
+63
+64    <application
+64-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:58:5-258:19
+65        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+65-->[androidx.core:core:1.0.0] F:\Android\.gradle\caches\transforms-2\files-2.1\f88df7c86cbc989e82020e686162bad6\core-1.0.0\AndroidManifest.xml:22:18-86
+66        android:debuggable="true"
+67        android:icon="@drawable/icon"
+67-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:59:9-38
+68        android:label="@string/app_name"
+68-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:60:9-41
+69        android:testOnly="true" >
+70        <meta-data
+70-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:61:9-63:69
+71            android:name="com.google.android.gms.version"
+71-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:62:13-58
+72            android:value="@integer/google_play_services_version" />
+72-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:63:13-66
+73
+74        <!-- Google Maps v2 api key meta data -->
+75        <meta-data
+75-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:66:9-68:59
+76            android:name="com.google.android.maps.v2.API_KEY"
+76-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:67:13-62
+77            android:value="@string/google_maps_api_key" />
+77-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:68:13-56
+78        <meta-data
+78-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:70:9-72:69
+79            android:name="com.google.android.gms.ads.APPLICATION_ID"
+79-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:71:13-69
+80            android:value="ca-app-pub-3940256099942544/1033173712" />
+80-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:72:13-67
+81
+82        <uses-library android:name="com.google.android.maps" />
+82-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:74:9-64
+82-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:74:23-61
+83
+84        <activity
+84-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:76:9-85:20
+85            android:name="com.ubiqlog.ui.MainUI"
+85-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:77:13-35
+86            android:label="@string/app_name"
+86-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:78:13-45
+87            android:windowSoftInputMode="stateUnspecified|adjustPan" >
+87-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:79:13-69
+88            <intent-filter>
+88-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:80:13-84:29
+89                <action android:name="android.intent.action.MAIN" />
+89-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:81:17-69
+89-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:81:25-66
+90
+91                <category android:name="android.intent.category.LAUNCHER" />
+91-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:83:17-77
+91-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:83:27-74
+92            </intent-filter>
+93        </activity>
+94        <!-- <activity -->
+95        <!-- android:name=".LoggingUI" -->
+96        <!-- class=".LoggingUI" -->
+97        <!-- android:label="Recording" /> -->
+98        <activity
+98-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:90:9-94:45
+99            android:name="com.ubiqlog.ui.SensorsUI"
+99-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:91:13-38
+100            class=".SesnorsUI"
+100-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:92:13-31
+101            android:label="Sensors" />
+101-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:93:13-36
+102        <activity
+102-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:95:9-99:45
+103            android:name="com.ubiqlog.ui.SensorConfUI"
+103-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:96:13-41
+104            class=".SesnorConfUI"
+104-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:97:13-34
+105            android:label="Sensor Configuration" />
+105-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:98:13-49
+106        <activity
+106-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:100:9-104:45
+107            android:name="com.ubiqlog.ui.SettingUI"
+107-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:101:13-38
+108            class=".SettingUI"
+108-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:102:13-31
+109            android:label="Application Setting" />
+109-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:103:13-48
+110        <activity
+110-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:105:9-109:45
+111            android:name="com.ubiqlog.ui.DataManagementUI"
+111-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:106:13-45
+112            class=".DataManagmentUI"
+112-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:107:13-37
+113            android:label="Data Management" />
+113-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:108:13-44
+114        <activity
+114-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:110:9-114:45
+115            android:name="com.ubiqlog.ui.ExcludeApplicationUI"
+115-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:111:13-49
+116            class="ExcludeApplicationUI"
+116-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:112:13-41
+117            android:label="Exclude Application" />
+117-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:113:13-48
+118        <activity
+118-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:115:9-119:45
+119            android:name="com.ubiqlog.ui.NetworkSettingsUI"
+119-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:116:13-46
+120            class="NetworkSettingsUI"
+120-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:117:13-38
+121            android:label="Network Settings" />
+121-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:118:13-45
+122        <activity
+122-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:120:9-124:45
+123            android:name="com.ubiqlog.ui.ToolsUI"
+123-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:121:13-36
+124            class="ToolsUI"
+124-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:122:13-28
+125            android:label="Tools" />
+125-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:123:13-34
+126        <activity
+126-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:125:9-129:45
+127            android:name="com.ubiqlog.ui.extras.search.SearchMainUI"
+127-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:126:13-55
+128            class=".extras.search.SearchMainUI"
+128-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:127:13-48
+129            android:label="Search" />
+129-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:128:13-35
+130        <activity
+130-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:130:9-133:38
+131            android:name="com.ubiqlog.ui.extras.search.SearchResultListUI"
+131-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:131:13-61
+132            class=".extras.search.SearchResultListUI"
+132-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:132:13-54
+133            android:label="Search" />
+133-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:133:13-35
+134        <activity
+134-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:134:9-137:45
+135            android:name="com.ubiqlog.vis.ui.VisMain"
+135-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:135:13-54
+136            android:label="@string/Vis_app_name" />
+136-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:136:13-49
+137        <activity
+137-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:138:9-140:57
+138            android:name="com.ubiqlog.vis.ui.CallLog"
+138-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:139:13-54
+139            android:label="@string/Vis_call_app_name" />
+139-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:140:13-54
+140        <activity
+140-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:141:9-143:56
+141            android:name="com.ubiqlog.vis.ui.SmsLog"
+141-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:142:13-53
+142            android:label="@string/Vis_sms_app_name" />
+142-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:143:13-53
+143        <activity
+143-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:144:9-147:45
+144            android:name="com.ubiqlog.vis.ui.Settings"
+144-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:145:13-55
+145            android:label="@string/Vis_settings_app_name" />
+145-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:146:13-58
+146        <activity
+146-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:148:9-150:64
+147            android:name="com.ubiqlog.vis.ui.ApplicationLog"
+147-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:149:13-61
+148            android:label="@string/Vis_application_app_name" />
+148-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:150:13-61
+149        <activity
+149-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:151:9-153:62
+150            android:name="com.ubiqlog.vis.ui.BluetoothLog"
+150-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:152:13-59
+151            android:label="@string/Vis_bluetooth_app_name" />
+151-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:153:13-59
+152        <activity
+152-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:154:9-156:66
+153            android:name="com.ubiqlog.vis.ui.MovementLog"
+153-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:155:13-58
+154            android:label="@string/Vis_accelerometer_app_name" />
+154-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:156:13-63
+155        <activity
+155-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:157:9-159:61
+156            android:name="com.ubiqlog.vis.ui.LocationLog"
+156-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:158:13-58
+157            android:label="@string/Vis_location_app_name" />
+157-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:159:13-58
+158
+159        <service android:name="com.ubiqlog.ui.UbiqlogStatusBar" />
+159-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:161:9-53
+159-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:161:18-50
+160
+161        <!-- ############# Following fragment used to run the UbiqLog engine after the boot############# -->
+162
+163        <receiver
+163-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:165:9-173:20
+164            android:name="com.ubiqlog.core.AutoStartUbiqlog"
+164-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:166:13-61
+165            android:enabled="true"
+165-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:167:13-35
+166            android:exported="true"
+166-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:168:13-36
+167            android:label="AutoStartUbiqlog" >
+167-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:169:13-45
+168            <intent-filter>
+168-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:170:13-172:29
+169                <action android:name="android.intent.action.BOOT_COMPLETED" />
+169-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:171:17-79
+169-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:171:25-76
+170            </intent-filter>
+171        </receiver>
+172
+173        <service
+173-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:175:9-181:19
+174            android:name="com.ubiqlog.core.Engine"
+174-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:176:13-51
+175            android:label="Engine" >
+175-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:177:13-35
+176            <intent-filter>
+176-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:178:13-180:29
+177                <action android:name="com.ubiqlog.core.Engine" />
+177-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:179:17-66
+177-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:179:25-63
+178            </intent-filter>
+179        </service>
+180        <!-- ######################################################################################### -->
+181        <service android:name="com.ubiqlog.sensors.CallSensor" />
+181-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:183:9-66
+181-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:183:18-63
+182        <service android:name="com.ubiqlog.sensors.SMSSensor" />
+182-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:184:9-65
+182-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:184:18-62
+183        <service android:name="com.ubiqlog.sensors.ApplicationSensor" />
+183-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:185:9-73
+183-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:185:18-70
+184        <service android:name="com.ubiqlog.sensors.PictureSensor" />
+184-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:186:9-69
+184-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:186:18-66
+185        <service android:name="com.ubiqlog.sensors.BluetoothSensor" />
+185-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:187:9-71
+185-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:187:18-68
+186        <service android:name="com.ubiqlog.sensors.BluetoothSensor_NOTIMER" />
+186-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:188:9-79
+186-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:188:18-76
+187        <service android:name="com.ubiqlog.sensors.WiFiSensor" />
+187-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:189:9-66
+187-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:189:18-63
+188
+189        <!--
+190        <service android:name="com.ubiqlog.sensors.BTReceiver">
+191            <intent-filter>
+192                <action android:name="android.content.Intent.BluetoothDevice.ACTION_FOUND"/>
+193            </intent-filter>
+194        </service>
+195        -->
+196        <receiver android:name="com.ubiqlog.sensors.TellSensor" >
+196-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:198:9-202:20
+196-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:198:19-64
+197            <intent-filter>
+197-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:199:13-201:29
+198                <action android:name="android.intent.action.PHONE_STATE" />
+198-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:200:17-76
+198-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:200:25-73
+199            </intent-filter>
+200        </receiver>
+201
+202        <service android:name="com.ubiqlog.sensors.HardwareSensor_OLD" />
+202-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:204:9-74
+202-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:204:18-71
+203        <!-- <service android:name="com.ubiqlog.sensors.MockHardwareSensors"/> -->
+204        <service android:name="com.ubiqlog.sensors.LocationSensor" />
+204-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:206:9-70
+204-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:206:18-67
+205        <service android:name="com.ubiqlog.sensors.LocationGSSensor" />
+205-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:207:9-72
+205-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:207:18-69
+206        <service
+206-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:208:9-210:40
+207            android:name="com.ubiqlog.sensors.ActivitySensor"
+207-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:209:13-62
+208            android:exported="false" />
+208-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:210:13-37
+209        <service android:name="com.ubiqlog.core.DataAggregator" />
+209-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:211:9-67
+209-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:211:18-64
+210        <service android:name="com.ubiqlog.sensors.ActivityResultHandler" />
+210-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:212:9-77
+210-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:212:18-74
+211
+212        <!--
+213             Services added in December 2015
+214             by AP
+215        -->
+216        <service
+216-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:218:9-221:39
+217            android:name="com.ubiqlog.sensors.InteractionSensor"
+217-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:219:13-65
+218            android:enabled="true"
+218-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:220:13-35
+219            android:exported="true" />
+219-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:221:13-36
+220        <service
+220-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:222:9-225:39
+221            android:name="com.ubiqlog.sensors.BatterySensor"
+221-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:223:13-61
+222            android:enabled="true"
+222-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:224:13-35
+223            android:exported="true" />
+223-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:225:13-36
+224        <service
+224-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:226:9-229:39
+225            android:name="com.ubiqlog.sensors.AccelerometerSensor"
+225-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:227:13-67
+226            android:enabled="true"
+226-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:228:13-35
+227            android:exported="true" />
+227-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:229:13-36
+228        <service
+228-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:230:9-233:39
+229            android:name="com.ubiqlog.sensors.RawAudioSensor"
+229-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:231:13-62
+230            android:enabled="true"
+230-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:232:13-35
+231            android:exported="true" />
+231-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:233:13-36
+232        <service
+232-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:234:9-237:39
+233            android:name="com.ubiqlog.sensors.AmbientLightSensor"
+233-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:235:13-66
+234            android:enabled="true"
+234-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:236:13-35
+235            android:exported="true" />
+235-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:237:13-36
+236        <service
+236-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:238:9-241:39
+237            android:name="com.ubiqlog.sensors.SleepSensor"
+237-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:239:13-59
+238            android:enabled="true"
+238-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:240:13-35
+239            android:exported="true" />
+239-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:241:13-36
+240        <service
+240-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:242:9-253:19
+241            android:name="com.ubiqlog.sensors.ApplicationAccessibilityService"
+241-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:243:13-79
+242            android:label="application_accessibility_service"
+242-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:244:13-62
+243            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+243-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:245:13-79
+244            <intent-filter>
+244-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:246:13-248:29
+245                <action android:name="android.accessibilityservice.AccessibilityService" />
+245-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:247:17-92
+245-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:247:25-89
+246            </intent-filter>
+247
+248            <meta-data
+248-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:250:13-252:64
+249                android:name="android.accessibilityservice"
+249-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:251:17-60
+250                android:resource="@xml/accessibilityservice" />
+250-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:252:17-61
+251        </service>
+252        <service
+252-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:254:9-257:47
+253            android:name="com.ubiqlog.sensors.WearSensor"
+253-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:255:13-58
+254            android:enabled="true"
+254-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:256:13-35
+255            android:exported="true" />
+255-->F:\YI RONG\BU\Research\Ubiqlog\app\src\main\AndroidManifest.xml:257:13-36
+256
+257        <activity
+257-->[com.google.android.gms:play-services-auth:18.1.0] F:\Android\.gradle\caches\transforms-2\files-2.1\dc6f4066fdb9dcd3b50ba045f065cd35\jetified-play-services-auth-18.1.0\AndroidManifest.xml:23:9-27:75
+258            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+258-->[com.google.android.gms:play-services-auth:18.1.0] F:\Android\.gradle\caches\transforms-2\files-2.1\dc6f4066fdb9dcd3b50ba045f065cd35\jetified-play-services-auth-18.1.0\AndroidManifest.xml:24:13-93
+259            android:excludeFromRecents="true"
+259-->[com.google.android.gms:play-services-auth:18.1.0] F:\Android\.gradle\caches\transforms-2\files-2.1\dc6f4066fdb9dcd3b50ba045f065cd35\jetified-play-services-auth-18.1.0\AndroidManifest.xml:25:13-46
+260            android:exported="false"
+260-->[com.google.android.gms:play-services-auth:18.1.0] F:\Android\.gradle\caches\transforms-2\files-2.1\dc6f4066fdb9dcd3b50ba045f065cd35\jetified-play-services-auth-18.1.0\AndroidManifest.xml:26:13-37
+261            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+261-->[com.google.android.gms:play-services-auth:18.1.0] F:\Android\.gradle\caches\transforms-2\files-2.1\dc6f4066fdb9dcd3b50ba045f065cd35\jetified-play-services-auth-18.1.0\AndroidManifest.xml:27:13-72
+262        <!--
+263            Service handling Google Sign-In user revocation. For apps that do not integrate with
+264            Google Sign-In, this service will never be started.
+265        -->
+266        <service
+266-->[com.google.android.gms:play-services-auth:18.1.0] F:\Android\.gradle\caches\transforms-2\files-2.1\dc6f4066fdb9dcd3b50ba045f065cd35\jetified-play-services-auth-18.1.0\AndroidManifest.xml:33:9-37:51
+267            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+267-->[com.google.android.gms:play-services-auth:18.1.0] F:\Android\.gradle\caches\transforms-2\files-2.1\dc6f4066fdb9dcd3b50ba045f065cd35\jetified-play-services-auth-18.1.0\AndroidManifest.xml:34:13-89
+268            android:exported="true"
+268-->[com.google.android.gms:play-services-auth:18.1.0] F:\Android\.gradle\caches\transforms-2\files-2.1\dc6f4066fdb9dcd3b50ba045f065cd35\jetified-play-services-auth-18.1.0\AndroidManifest.xml:35:13-36
+269            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+269-->[com.google.android.gms:play-services-auth:18.1.0] F:\Android\.gradle\caches\transforms-2\files-2.1\dc6f4066fdb9dcd3b50ba045f065cd35\jetified-play-services-auth-18.1.0\AndroidManifest.xml:36:13-107
+270            android:visibleToInstantApps="true" />
+270-->[com.google.android.gms:play-services-auth:18.1.0] F:\Android\.gradle\caches\transforms-2\files-2.1\dc6f4066fdb9dcd3b50ba045f065cd35\jetified-play-services-auth-18.1.0\AndroidManifest.xml:37:13-48
+271
+272        <activity
+272-->[com.google.android.gms:play-services-base:17.1.0] F:\Android\.gradle\caches\transforms-2\files-2.1\71e2c593e06ac7b66917d7ce206c24ac\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+273            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+273-->[com.google.android.gms:play-services-base:17.1.0] F:\Android\.gradle\caches\transforms-2\files-2.1\71e2c593e06ac7b66917d7ce206c24ac\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+274            android:exported="false"
+274-->[com.google.android.gms:play-services-base:17.1.0] F:\Android\.gradle\caches\transforms-2\files-2.1\71e2c593e06ac7b66917d7ce206c24ac\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+275            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+275-->[com.google.android.gms:play-services-base:17.1.0] F:\Android\.gradle\caches\transforms-2\files-2.1\71e2c593e06ac7b66917d7ce206c24ac\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+276    </application>
+277
+278</manifest>

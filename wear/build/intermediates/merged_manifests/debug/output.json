@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "applicationId": "com.example.android.wearablemessageapiexample",
+  "variantType": "BASE_APK",
+  "elements": [
+    {
+      "outputType": {
+        "type": "MERGED_MANIFESTS"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 1,
+        "versionName": "1.0",
+        "outputFile": "wear-debug.apk",
+        "fullName": "debug",
+        "baseName": "debug",
+        "dirName": ""
+      },
+      "path": "AndroidManifest.xml",
+      "properties": {
+        "packageId": "com.example.android.wearablemessageapiexample",
+        "split": "",
+        "minSdkVersion": "19"
+      }
+    }
+  ]
+}

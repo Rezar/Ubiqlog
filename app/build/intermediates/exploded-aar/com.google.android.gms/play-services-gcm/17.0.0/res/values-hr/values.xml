@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding='utf-8' standalone='no'?>
+<resources>
+<!-- blaze-out/k8-opt/genfiles/java/com/google/android/gmscore/dev/client/gcm/res/values-hr/strings.xml -->
+<eat-comment/>
+<string name="gcm_fallback_notification_channel_label" msgid="9521340570209730">"Razno"</string>
+</resources>

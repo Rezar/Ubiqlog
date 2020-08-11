@@ -1,0 +1,4 @@
+int drawable ic_plusone_medium_off_client 0x1
+int drawable ic_plusone_small_off_client 0x1
+int drawable ic_plusone_standard_off_client 0x1
+int drawable ic_plusone_tall_off_client 0x1

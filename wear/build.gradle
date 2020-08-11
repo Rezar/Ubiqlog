@@ -18,13 +18,13 @@ apply plugin: 'com.android.application'
 
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 30
+    buildToolsVersion "30.0.0"
 
     defaultConfig {
         applicationId "com.example.android.wearablemessageapiexample"
-        minSdkVersion 20
-        targetSdkVersion 21
+        minSdkVersion 19
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
     }
@@ -38,6 +38,7 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.google.android.support:wearable:1.1.0'
-    compile 'com.google.android.gms:play-services-wearable:6.5.87'
+//    compile 'com.google.android.support:wearable:1.1.0'
+    compile 'com.google.android.gms:play-services-wearable:17.0.0'
+//    compile 'com.google.android.gms:play-services-wearable:6.5.87'
 }

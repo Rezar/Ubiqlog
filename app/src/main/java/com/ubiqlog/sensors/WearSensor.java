@@ -22,7 +22,7 @@ public class WearSensor extends Service {
     private final String MESSAGE1_PATH = "/message1";
     private final String MESSAGE2_PATH = "/message2";
     private GoogleApiClient apiClient;
-    private NodeApi.NodeListener nodeListener;
+//    private NodeApi.NodeListener nodeListener;
     private String remoteNodeId;
     private MessageApi.MessageListener messageListener;
 
@@ -34,16 +34,16 @@ public class WearSensor extends Service {
     public void onCreate() {
         Log.e("Wear-Logging", "--- onCreat");
         // Create NodeListener that enables buttons when a node is connected and disables buttons when a node is disconnected
-        nodeListener = new NodeApi.NodeListener() {
-            @Override
-            public void onPeerConnected(Node node) {
-                remoteNodeId = node.getId();
-            }
-
-            @Override
-            public void onPeerDisconnected(Node node) {
-
-            }
+//        nodeListener = new NodeApi.NodeListener() {
+//            @Override
+//            public void onPeerConnected(Node node) {
+//                remoteNodeId = node.getId();
+//            }
+//
+//            @Override
+//            public void onPeerDisconnected(Node node) {
+//
+//            }
         };
 
         // Create MessageListener that receives messages sent from a mobile
@@ -60,8 +60,8 @@ public class WearSensor extends Service {
         };
         */
         // Create MessageListener that receives messages sent from a wearable
-        messageListener = new MessageApi.MessageListener() {
-            @Override
+//        messageListener = new MessageApi.MessageListener() {
+//            @Override
             public void onMessageReceived(final MessageEvent messageEvent) {
                 //Log.e("Wear-Logging", "wwwwwrrrrr");
 
@@ -84,41 +84,41 @@ public class WearSensor extends Service {
                     //Toast.makeText(getBaseContext(),new String(messageEvent.getData()),Toast.LENGTH_LONG).show();
                 }
 
-            }
-        };
+            };
+//        };
         // Create GoogleApiClient
-        apiClient = new GoogleApiClient.Builder(getApplicationContext()).addConnectionCallbacks(new GoogleApiClient.ConnectionCallbacks() {
-            @Override
-            public void onConnected(Bundle bundle) {
-                // Register Node and Message listeners
-                Wearable.NodeApi.addListener(apiClient, nodeListener);
-                Wearable.MessageApi.addListener(apiClient, messageListener);
-                // If there is a connected node, get it's id that is used when sending messages
-                Wearable.NodeApi.getConnectedNodes(apiClient).setResultCallback(new ResultCallback<NodeApi.GetConnectedNodesResult>() {
-                    @Override
-                    public void onResult(NodeApi.GetConnectedNodesResult getConnectedNodesResult) {
-                        if (getConnectedNodesResult.getStatus().isSuccess() && getConnectedNodesResult.getNodes().size() > 0) {
-                            remoteNodeId = getConnectedNodesResult.getNodes().get(0).getId();
-
-                        }
-                    }
-                });
-            }
-
-            @Override
-            public void onConnectionSuspended(int i) {
-
-            }
-        }).addOnConnectionFailedListener(new GoogleApiClient.OnConnectionFailedListener() {
-            @Override
-            public void onConnectionFailed(ConnectionResult connectionResult) {
-                if (connectionResult.getErrorCode() == ConnectionResult.API_UNAVAILABLE)
-                    Toast.makeText(getApplicationContext(), "unava", Toast.LENGTH_LONG).show();
-            }
-        }).addApi(Wearable.API).build();
-
-
-    }
+//        apiClient = new GoogleApiClient.Builder(getApplicationContext()).addConnectionCallbacks(new GoogleApiClient.ConnectionCallbacks() {
+//            @Override
+//            public void onConnected(Bundle bundle) {
+//                // Register Node and Message listeners
+//                Wearable.NodeApi.addListener(apiClient, nodeListener);
+//                Wearable.MessageApi.addListener(apiClient, messageListener);
+//                // If there is a connected node, get it's id that is used when sending messages
+//                Wearable.NodeApi.getConnectedNodes(apiClient).setResultCallback(new ResultCallback<NodeApi.GetConnectedNodesResult>() {
+//                    @Override
+//                    public void onResult(NodeApi.GetConnectedNodesResult getConnectedNodesResult) {
+//                        if (getConnectedNodesResult.getStatus().isSuccess() && getConnectedNodesResult.getNodes().size() > 0) {
+//                            remoteNodeId = getConnectedNodesResult.getNodes().get(0).getId();
+//
+//                        }
+//                    }
+//                });
+//            }
+//
+//            @Override
+//            public void onConnectionSuspended(int i) {
+//
+//            }
+//        }).addOnConnectionFailedListener(new GoogleApiClient.OnConnectionFailedListener() {
+//            @Override
+//            public void onConnectionFailed(ConnectionResult connectionResult) {
+//                if (connectionResult.getErrorCode() == ConnectionResult.API_UNAVAILABLE)
+//                    Toast.makeText(getApplicationContext(), "unava", Toast.LENGTH_LONG).show();
+//            }
+//        }).addApi(Wearable.API).build();
+//
+//
+//    }
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
@@ -146,7 +146,7 @@ public class WearSensor extends Service {
         //mDataBuffer.flush(true);
         Log.e("WEAR-Logging", "--- onDestroy");
 
-        Wearable.NodeApi.removeListener(apiClient, nodeListener);
+//        Wearable.NodeApi.removeListener(apiClient, nodeListener);
         Wearable.MessageApi.removeListener(apiClient, messageListener);
         apiClient.disconnect();
     }

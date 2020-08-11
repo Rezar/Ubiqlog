@@ -1,0 +1,1 @@
+{"ICU4C": {"length": 21000, "start": 10}, "JSR 305": {"length": 1602, "start": 21022}, "Protobuf Nano": {"length": 1732, "start": 22642}, "STL": {"length": 680, "start": 24382}, "UTF": {"length": 731, "start": 25070}, "flatbuffers": {"length": 11342, "start": 25817}, "safeparcel": {"length": 11358, "start": 37174}}

@@ -42,7 +42,7 @@ public class LightSensor extends Service implements SensorEventListener {
 
     private GoogleApiClient apiClient;
     private EditText receivedMessagesEditText;
-    private NodeApi.NodeListener nodeListener;
+//    private NodeApi.NodeListener nodeListener;
     private MessageApi.MessageListener messageListener;
     private String remoteNodeId;
 
@@ -64,17 +64,17 @@ public class LightSensor extends Service implements SensorEventListener {
         Log.d(LOG_TAG, "Light sensor started");
 
         // Create NodeListener that enables buttons when a node is connected and disables buttons when a node is disconnected
-        nodeListener = new NodeApi.NodeListener() {
-            @Override
-            public void onPeerConnected(Node node) {
-
-            }
-
-            @Override
-            public void onPeerDisconnected(Node node) {
-
-            }
-        };
+//        nodeListener = new NodeApi.NodeListener() {
+//            @Override
+//            public void onPeerConnected(Node node) {
+//
+//            }
+//
+//            @Override
+//            public void onPeerDisconnected(Node node) {
+//
+//            }
+//        };
 
         // Create MessageListener that receives messages sent from a mobile
         messageListener = new MessageApi.MessageListener() {
@@ -93,7 +93,7 @@ public class LightSensor extends Service implements SensorEventListener {
             @Override
             public void onConnected(Bundle bundle) {
                 // Register Node and Message listeners
-                Wearable.NodeApi.addListener(apiClient, nodeListener);
+//                Wearable.NodeApi.addListener(apiClient, nodeListener);
                 Wearable.MessageApi.addListener(apiClient, messageListener);
                 // If there is a connected node, get it's id that is used when sending messages
                 Wearable.NodeApi.getConnectedNodes(apiClient).setResultCallback(new ResultCallback<NodeApi.GetConnectedNodesResult>() {
@@ -203,7 +203,7 @@ public class LightSensor extends Service implements SensorEventListener {
     public void onDestroy() {
         //mDataBuffer.flush(true);
         //Unregister the listener
-        Wearable.NodeApi.removeListener(apiClient, nodeListener);
+//        Wearable.NodeApi.removeListener(apiClient, nodeListener);
         Wearable.MessageApi.removeListener(apiClient, messageListener);
         apiClient.disconnect();
         mSensorManager.unregisterListener(this);
